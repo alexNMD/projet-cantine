@@ -4,7 +4,7 @@
 La société Stone Education est un organisme de formation professionnel diplômant reconnu par l'état qui accueille de nombreux stagiaires.
 Actuellement, l'entreprise prend les commandes de repas du midi de façon manuelle. Les étudiants doivent se déplacer le matin pour passer leur commande. Ou bien, venir directement à l’heure du midi pour récupérer un plat.
 Afin de simplifier et améliorer ce système, l'entreprise souhaite se doter d'une application simple de gestion des commandes entièrement informatisée permettant de diminuer le temps d’attente pour chaque client.
-##3.2.    EXIGENCES FONCTIONNELLES
+## 3.2.    EXIGENCES FONCTIONNELLES
 - Toute personne pourra s’enregistrer dans le système à partir du moment où elle peut accéder à l’application. Ceci implique donc les stagiaires, les professeurs, des personnes de passages (membres de jury).
 - Un utilisateur peut s’authentifier sur l’application puis :
 Accéder à son compte client, où il peut modifier l’ensemble de ses informations (au minimum son adresse email et son mot de passe)
