@@ -54,6 +54,7 @@ a:focus {
   background: #C59D6E;
   color: #fff;
   transition: all 0.3s;
+  height: 100%!important;
 }
 #sidebar.active {
   min-width: 250px;
@@ -196,6 +197,7 @@ a.article:hover {
     max-width: 80px;
     text-align: center;
     margin-left: -80px !important;
+  
   }
   #sidebarCollapse {
     display: block;
