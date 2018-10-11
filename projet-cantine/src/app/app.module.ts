@@ -8,8 +8,6 @@ import { MenuComponent } from './menu/menu.component';
 import { ContentComponent } from './content/content.component';
 
 import { LoginComponent } from './login/login.component';
-import { GestionCommandesComponent } from './gestion-commandes/gestion-commandes.component';
-import { HistoriqueIndivComponent } from './historique-indiv/historique-indiv.component';
 import { CalendrierComponent } from './calendrier/calendrier.component';
 import { PlatComponent } from './plat/plat.component';
 
@@ -22,8 +20,6 @@ import { PanierModalComponent } from './panier-modal/panier-modal.component';
     MenuComponent,
     ContentComponent,
     LoginComponent,
-    GestionCommandesComponent,
-    HistoriqueIndivComponent,
     CompteModalComponent,
     CalendrierComponent,
     PlatComponent,

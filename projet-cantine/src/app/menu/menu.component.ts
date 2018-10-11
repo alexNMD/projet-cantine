@@ -26,7 +26,6 @@ export class MenuComponent implements OnInit {
 
 
   openFormModalCompte() {
-    console.log("it works");
     const modalRef = this.modalService.open(CompteModalComponent);
 
     modalRef.result.then((result) => {
@@ -36,15 +35,14 @@ export class MenuComponent implements OnInit {
     });
 
   }
-  
+
   openFormModalPanier() {
-    console.log("it works");
-    const modalRef = this.modalService.open(CompteModalComponent);
+    const modalRef = this.modalService.open(PanierModalComponent);
 
     modalRef.result.then((result) => {
       console.log(result);
     }).catch((error) => {
       console.log(error);
     });
-
+  }
   }

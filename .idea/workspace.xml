@@ -2,12 +2,69 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ead7753f-67f3-4759-abd0-91aea2581c8c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/projet-cantine.iml" afterPath="$PROJECT_DIR$/.idea/projet-cantine.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/.angular-cli.json" afterPath="$PROJECT_DIR$/projet-cantine/.angular-cli.json" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/.gitignore" afterPath="$PROJECT_DIR$/projet-cantine/.gitignore" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/README.md" afterPath="$PROJECT_DIR$/projet-cantine/README.md" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/e2e/app.e2e-spec.ts" afterPath="$PROJECT_DIR$/projet-cantine/e2e/app.e2e-spec.ts" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/e2e/app.po.ts" afterPath="$PROJECT_DIR$/projet-cantine/e2e/app.po.ts" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/e2e/tsconfig.e2e.json" afterPath="$PROJECT_DIR$/projet-cantine/e2e/tsconfig.e2e.json" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/karma.conf.js" afterPath="$PROJECT_DIR$/projet-cantine/karma.conf.js" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/node_modules/@angular/common/bundles/common-http-testing.umd.js" afterPath="$PROJECT_DIR$/projet-cantine/node_modules/@angular/common/bundles/common-http-testing.umd.js" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/node_modules/@angular/common/bundles/common-http.umd.js" afterPath="$PROJECT_DIR$/projet-cantine/node_modules/@angular/common/bundles/common-http.umd.js" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/node_modules/@angular/http/bundles/http-testing.umd.js" afterPath="$PROJECT_DIR$/projet-cantine/node_modules/@angular/http/bundles/http-testing.umd.js" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/node_modules/@angular/platform-browser/bundles/platform-browser-testing.umd.js" afterPath="$PROJECT_DIR$/projet-cantine/node_modules/@angular/platform-browser/bundles/platform-browser-testing.umd.js" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/node_modules/@angular/router/bundles/router-testing.umd.js" afterPath="$PROJECT_DIR$/projet-cantine/node_modules/@angular/router/bundles/router-testing.umd.js" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/node_modules/@types/node/LICENSE" afterPath="$PROJECT_DIR$/projet-cantine/node_modules/@types/node/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/node_modules/@types/node/index.d.ts" afterPath="$PROJECT_DIR$/projet-cantine/node_modules/@types/node/index.d.ts" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/node_modules/uri-js/dist/es5/uri.all.js" afterPath="$PROJECT_DIR$/projet-cantine/node_modules/uri-js/dist/es5/uri.all.js" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/node_modules/uri-js/dist/esnext/schemes/mailto.js" afterPath="$PROJECT_DIR$/projet-cantine/node_modules/uri-js/dist/esnext/schemes/mailto.js" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/node_modules/uri-js/dist/esnext/uri.js" afterPath="$PROJECT_DIR$/projet-cantine/node_modules/uri-js/dist/esnext/uri.js" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/package.json" afterPath="$PROJECT_DIR$/projet-cantine/package.json" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/protractor.conf.js" afterPath="$PROJECT_DIR$/projet-cantine/protractor.conf.js" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/app.component.css" afterPath="$PROJECT_DIR$/projet-cantine/src/app/app.component.css" />
       <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/app.component.html" afterPath="$PROJECT_DIR$/projet-cantine/src/app/app.component.html" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/app.component.spec.ts" afterPath="$PROJECT_DIR$/projet-cantine/src/app/app.component.spec.ts" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/app.component.ts" afterPath="$PROJECT_DIR$/projet-cantine/src/app/app.component.ts" />
       <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/app.module.ts" afterPath="$PROJECT_DIR$/projet-cantine/src/app/app.module.ts" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/appareil/appareil.component.spec.ts" afterPath="$PROJECT_DIR$/projet-cantine/src/app/appareil/appareil.component.spec.ts" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/appareil/appareil.component.ts" afterPath="$PROJECT_DIR$/projet-cantine/src/app/appareil/appareil.component.ts" />
       <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/calendrier/calendrier.component.html" afterPath="$PROJECT_DIR$/projet-cantine/src/app/calendrier/calendrier.component.html" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/calendrier/calendrier.component.spec.ts" afterPath="$PROJECT_DIR$/projet-cantine/src/app/calendrier/calendrier.component.spec.ts" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/calendrier/calendrier.component.ts" afterPath="$PROJECT_DIR$/projet-cantine/src/app/calendrier/calendrier.component.ts" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/compte-modal/compte-modal.component.html" afterPath="$PROJECT_DIR$/projet-cantine/src/app/compte-modal/compte-modal.component.html" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/gestion-commandes/gestion-commandes.component.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/gestion-commandes/gestion-commandes.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/gestion-commandes/gestion-commandes.component.spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/gestion-commandes/gestion-commandes.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/historique-indiv/historique-indiv.component.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/historique-indiv/historique-indiv.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/historique-indiv/historique-indiv.component.spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/historique-indiv/historique-indiv.component.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/menu/menu.component.css" afterPath="$PROJECT_DIR$/projet-cantine/src/app/menu/menu.component.css" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/menu/menu.component.html" afterPath="$PROJECT_DIR$/projet-cantine/src/app/menu/menu.component.html" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/menu/menu.component.ts" afterPath="$PROJECT_DIR$/projet-cantine/src/app/menu/menu.component.ts" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/mon-premier/mon-premier.component.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/mon-premier/mon-premier.component.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/mon-premier/mon-premier.component.spec.ts" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/mon-premier/mon-premier.component.ts" afterPath="" />
       <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/plat/plat.component.html" afterPath="$PROJECT_DIR$/projet-cantine/src/app/plat/plat.component.html" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/plat/plat.component.spec.ts" afterPath="$PROJECT_DIR$/projet-cantine/src/app/plat/plat.component.spec.ts" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/app/plat/plat.component.ts" afterPath="$PROJECT_DIR$/projet-cantine/src/app/plat/plat.component.ts" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/environments/environment.ts" afterPath="$PROJECT_DIR$/projet-cantine/src/environments/environment.ts" />
       <change beforePath="$PROJECT_DIR$/projet-cantine/src/index.html" afterPath="$PROJECT_DIR$/projet-cantine/src/index.html" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/main.ts" afterPath="$PROJECT_DIR$/projet-cantine/src/main.ts" />
       <change beforePath="$PROJECT_DIR$/projet-cantine/src/styles.css" afterPath="$PROJECT_DIR$/projet-cantine/src/styles.css" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/tsconfig.app.json" afterPath="$PROJECT_DIR$/projet-cantine/src/tsconfig.app.json" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/tsconfig.spec.json" afterPath="$PROJECT_DIR$/projet-cantine/src/tsconfig.spec.json" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/src/typings.d.ts" afterPath="$PROJECT_DIR$/projet-cantine/src/typings.d.ts" />
+      <change beforePath="$PROJECT_DIR$/projet-cantine/tslint.json" afterPath="$PROJECT_DIR$/projet-cantine/tslint.json" />
+      <change beforePath="$PROJECT_DIR$/test.txt.txt" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -28,23 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="modal-plat.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/modal-plat/modal-plat.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-              <folding>
-                <element signature="e#327#334#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/projet-cantine/src/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+            <state relative-caret-position="135">
+              <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -53,8 +98,8 @@
       <file leaf-file-name="plat.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/plat/plat.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            <state relative-caret-position="105">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,7 +141,7 @@
         <entry file="file://$PROJECT_DIR$/projet-cantine/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -159,6 +204,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -189,14 +236,6 @@
               <item name="projet-cantine" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="projet-cantine" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="app" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modal-plat" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="projet-cantine" type="b2602c69:ProjectViewProjectNode" />
-              <item name="projet-cantine" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="projet-cantine" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -211,8 +250,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -248,33 +285,33 @@
       <updated>1539173905821</updated>
       <workItem from="1539173907014" duration="5642000" />
       <workItem from="1539189341625" duration="8143000" />
+      <workItem from="1539260922426" duration="2000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13785000" />
+    <option name="totallyTimeSpent" value="13787000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="954" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25274727" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25579977" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -290,6 +327,64 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/calendrier/calendrier.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="41" lean-forward="false" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet-cantine/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" lean-forward="false" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/plat/plat.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/plat/plat.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet-cantine/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/plat/plat.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/app.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -302,7 +397,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -310,26 +404,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <marker date="1539247114376" expanded="true" signature="718:850" ph="{...}" />
-            <marker date="1539247114376" expanded="true" signature="875:878" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/mon-premier/mon-premier.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" lean-forward="true" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/mon-premier/mon-premier.component.html" />
     <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/appareil/appareil.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -337,23 +419,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/mon-premier/mon-premier.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/mon-premier/mon-premier.component.ts" />
     <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/app.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -362,7 +435,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -395,7 +467,6 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
             <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
@@ -412,39 +483,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/mon-premier/mon-premier.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="3" selection-end-line="0" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/mon-premier/mon-premier.component.html" />
     <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/appareil/appareil.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/mon-premier/mon-premier.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/mon-premier/mon-premier.component.ts" />
     <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/appareil/appareil.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -452,10 +506,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <marker date="1539247114376" expanded="true" signature="718:850" ph="{...}" />
-            <marker date="1539247114376" expanded="true" signature="875:878" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -463,7 +513,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -471,7 +520,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="61" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -479,7 +527,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="1" lean-forward="false" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -487,7 +534,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -517,44 +563,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/modal-plat/modal-plat.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/modal-plat/modal-plat.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/modal-plat/modal-plat.component.ts" />
+    <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/modal-plat/modal-plat.component.css" />
     <entry file="file://$PROJECT_DIR$/projet-cantine/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/modal-plat/modal-plat.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding>
-            <element signature="e#327#334#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/modal-plat/modal-plat.component.html" />
     <entry file="file://$PROJECT_DIR$/projet-cantine/src/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="1" lean-forward="false" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -569,8 +592,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/projet-cantine/src/app/plat/plat.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>

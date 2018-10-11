@@ -1,16 +1,47 @@
 <div class="modal-wrapper">
+
   <div class="modal-header">
-      <h4 class="modal-title">{{user}}</h4>
-      <button type="button" class="closeModal btn btn-warning" aria-label="Close"
-       (click)="activeModal.dismiss('Cross click')"><i class="fas fa-times"></i>
-      </button>
-    </div>
-    <div class="modal-body">
-      <p>My modal content</p>
-    </div>
-    <div class="modal-footer">
-      <button (click)="activeModal.dismiss('Close clicked')">
-        Enregistrer et quitter
-      </button>
-    </div>
+    <button type="button" class="closeModal btn btn-warning" aria-label="Close" (click)="activeModal.dismiss('Cross click')"><i
+        class="fas fa-times"></i>
+    </button>
+    <h4 class="modal-title">{{user}}</h4>
+  </div>
+
+
+  <div class="modal-body">
+  <table>
+    <tr>
+      <td>Nom</td>
+      <td>{{user}}</td>
+      <td>Modifier</td>
+  </tr>
+    <tr>
+        <td>Promo</td>
+        <td>{{promo}}</td>
+        <td>Modifier</td>
+    </tr>
+    <tr>
+        <td>Email</td>
+        <td>{{email}}</td>
+        <td>Modifier</td>
+    </tr>
+    <tr>
+        <td>Régime alimentaire</td>
+        <td>{{regime}}</td>
+        <td>Modifier</td>
+    </tr>
+
+  </table>
+
+
+
+
+  </div>
+
+
+  <div class="modal-footer">
+    <button (click)="activeModal.dismiss('Close clicked')">
+      Enregistrer et quitter
+    </button>
+  </div>
 </div>
