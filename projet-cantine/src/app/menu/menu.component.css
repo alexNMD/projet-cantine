@@ -53,6 +53,7 @@ a:focus {
   text-align: center;
   background: #C59D6E;
   color: #fff;
+  transition: all 0.3s;
 }
 #sidebar.active {
   min-width: 250px;
@@ -81,7 +82,6 @@ a:focus {
 #sidebar ul li a {
   padding: 20px 10px;
   text-align: center;
-  font-size: 0.85em;
 }
 #sidebar.active ul li a {
   text-align: left;
@@ -95,17 +95,28 @@ a:focus {
 #sidebar.active ul li a span {
   display: inline;
 }
-#sidebar.active ul li a i {
-  margin-right: 10px;
+/*#sidebar.active ul li a i {
+    margin-right: 10px;
+}*/
+#sidebar.active ul ul a {
+  padding: 10px !important;
 }
 #sidebar ul li a i {
-  margin-right: 0;
+  margin-right: 10px;
   display: block;
   font-size: 1.8em;
   margin-bottom: 5px;
 }
-#sidebar.active ul ul a {
-  padding: 10px !important;
+#sidebar.active h4 {
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 1.8em;
+}
+#sidebar h4 {
+  background: #9d7d58;
+  padding: 20px 10px;
+  text-align: center;
+  font-size: 0.85em;
 }
 #sidebar.active .dropdown-toggle::after {
   top: auto;

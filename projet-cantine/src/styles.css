@@ -7,3 +7,19 @@
     background-color: #F1E4B5;
 }
 
+.closeModal {
+    background-color: red;
+    position: absolute;
+    top:-5px;
+    left: 45%;
+}
+
+.modal-wrapper {
+    text-align: center;
+}
+.modal-footer {
+    display: block!important;
+}
+.modal-header {
+    display:block!important;
+}
