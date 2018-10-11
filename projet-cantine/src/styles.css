@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+html,body {
+    height: 100vh;
+}
+.bodyColor {
+    background-color: #F1E4B5
+}
 .menu {
     background-color: #C59D6E;
 }
@@ -6,11 +12,15 @@
     background-color: #F1E4B5;
 }
 .closeModal {
-    background-color: red;
-    position: absolute;
-    top:-5px;
-    left: 45%;
+    background-color: #C59D6E;
+    position: relative;
+    top: -33px;
 }
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+  }
 
 .modal-wrapper {
     text-align: center;

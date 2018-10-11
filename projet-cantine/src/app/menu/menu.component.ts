@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { CompteModalComponent } from '../compte-modal/compte-modal.component'
+import { PanierModalComponent } from '../panier-modal/panier-modal.component'
+
 import * as $ from 'jquery';
 
 @Component({
@@ -13,29 +15,34 @@ export class MenuComponent implements OnInit {
   constructor(private modalService: NgbModal) { }
 
   ngOnInit() {
-  $('#sidebar').on('mouseenter', function () {
+    $('#sidebar').on('mouseenter', function () {
       $('#sidebar').toggleClass('active');
-  });
-  
-  $('#sidebar').on('mouseleave', function () {
+    });
+
+    $('#sidebar').on('mouseleave', function () {
       $('#sidebar').toggleClass('active');
-  });
-  
-  $('#sidebarCollapse').on('click', function () {
-      $('#sidebar').toggleClass('active');
-  });
+    });
   }
 
 
-  openFormModalCompte() {
-    console.log("it works");
+  openFormModalCompte(id) {
     const modalRef = this.modalService.open(CompteModalComponent);
-    
+
+    modalRef.result.then((result) => {
+      console.log(result);
+    }).catch((error) => {
+      console.log(error);
+    });
+
+  }
+
+  openFormModalPanier() {
+    const modalRef = this.modalService.open(PanierModalComponent);
+
     modalRef.result.then((result) => {
       console.log(result);
     }).catch((error) => {
       console.log(error);
     });
   }
-
-}
+  }
