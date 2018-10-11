@@ -11,6 +11,8 @@ import { CompteComponent } from './compte/compte.component';
 import { LoginComponent } from './login/login.component';
 import { GestionCommandesComponent } from './gestion-commandes/gestion-commandes.component';
 import { HistoriqueIndivComponent } from './historique-indiv/historique-indiv.component';
+import { CalendrierComponent } from './calendrier/calendrier.component';
+import { PlatComponent } from './plat/plat.component';
 
 import { CompteModalComponent } from './compte-modal/compte-modal.component';
 
@@ -25,6 +27,8 @@ import { CompteModalComponent } from './compte-modal/compte-modal.component';
     GestionCommandesComponent,
     HistoriqueIndivComponent,
     CompteModalComponent
+    CalendrierComponent,
+    PlatComponent
   ],
   imports: [
     BrowserModule,
