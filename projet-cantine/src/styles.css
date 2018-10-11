@@ -2,8 +2,12 @@
 .menu {
     background-color: #C59D6E;
 }
-
 .main-content {
     background-color: #F1E4B5;
 }
-
+.bodyColor {
+    background-color: #F1E4B5;
+}
+.li-title {
+    background-color: #e3e3e3;
+}

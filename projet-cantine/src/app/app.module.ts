@@ -10,6 +10,8 @@ import { CompteComponent } from './compte/compte.component';
 import { LoginComponent } from './login/login.component';
 import { GestionCommandesComponent } from './gestion-commandes/gestion-commandes.component';
 import { HistoriqueIndivComponent } from './historique-indiv/historique-indiv.component';
+import { CalendrierComponent } from './calendrier/calendrier.component';
+import { PlatComponent } from './plat/plat.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HistoriqueIndivComponent } from './historique-indiv/historique-indiv.co
     CompteComponent,
     LoginComponent,
     GestionCommandesComponent,
-    HistoriqueIndivComponent
+    HistoriqueIndivComponent,
+    CalendrierComponent,
+    PlatComponent
   ],
   imports: [
     BrowserModule,
