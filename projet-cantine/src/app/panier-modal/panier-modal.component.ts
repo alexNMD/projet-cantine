@@ -9,6 +9,8 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 export class PanierModalComponent implements OnInit {
 
   user : string = "Julien";
+  plat : string = "Spagetti";
+  prix : number = 8.5;
   date;
   constructor(public activeModal: NgbActiveModal) { }
   
