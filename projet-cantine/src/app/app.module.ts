@@ -1,28 +1,36 @@
 import { BrowserModule } from '@angular/platform-browser';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 
-
 import { AppComponent } from './app.component';
-import { MonPremierComponent } from './mon-premier/mon-premier.component';
-import { AppareilComponent } from './appareil/appareil.component';
-import {FormsModule} from "@angular/forms";
+import { MenuComponent } from './menu/menu.component';
+import { ContentComponent } from './content/content.component';
+import { PanierComponent } from './panier/panier.component';
+import { CompteComponent } from './compte/compte.component';
+import { LoginComponent } from './login/login.component';
+import { GestionCommandesComponent } from './gestion-commandes/gestion-commandes.component';
+import { HistoriqueIndivComponent } from './historique-indiv/historique-indiv.component';
 import { CalendrierComponent } from './calendrier/calendrier.component';
 import { PlatComponent } from './plat/plat.component';
 
-
 @NgModule({
-    declarations: [
-        AppComponent,
-        MonPremierComponent,
-        AppareilComponent,
-        CalendrierComponent,
-        PlatComponent,
-    ],
-    imports: [
-        BrowserModule,
-        FormsModule
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    MenuComponent,
+    ContentComponent,
+    PanierComponent,
+    CompteComponent,
+    LoginComponent,
+    GestionCommandesComponent,
+    HistoriqueIndivComponent,
+    CalendrierComponent,
+    PlatComponent
+  ],
+  imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.menu {
+    background-color: #C59D6E;
+}
+.main-content {
+    background-color: #F1E4B5;
+}
 .bodyColor {
     background-color: #F1E4B5;
 }
