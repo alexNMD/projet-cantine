@@ -1,50 +1,40 @@
 <div class="wrapper">
-    <!-- Sidebar -->
-    <nav id="sidebar">
-        <div class="sidebar-header">
-            <h3>Bootstrap Sidebar</h3>
+        <!-- Sidebar -->
+        <nav id="sidebar">
+            <div class="sidebar-header text-center">
+                <h3>Food For Fun</h3>
+                <strong>FFF</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#" (click)="openFormModalCompte()"><i class="fas fa-user"></i><span> [Username]</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-shopping-cart"></i><span>Panier</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fas fa-book"></i><span>Historique</span></a>
+                </li>
+            </ul>
+            <h4>Gestion</h4>
+            <ul class="liste-unstyled components management-menu">
+                <li>
+                    <a href="#">Recharger</a>
+                </li>
+                <li>
+                    <a href="#">Gérer les commandes</a>
+                </li>
+                <li>
+                    <a href="#">Logs</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="content">
+             <div class="container-fluid">
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                </button>
+             </div>
         </div>
-
-        <ul class="list-unstyled components">
-            <p>Dummy Heading</p>
-            <li class="active">
-                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-                <ul class="collapse list-unstyled" id="homeSubmenu">
-                    <li>
-                        <a href="#">Home 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Home 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Home 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-                <ul class="collapse list-unstyled" id="pageSubmenu">
-                    <li>
-                        <a href="#">Page 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Page 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Page 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Portfolio</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-</div>
+    </div>

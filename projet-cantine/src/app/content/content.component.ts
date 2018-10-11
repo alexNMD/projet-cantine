@@ -12,11 +12,7 @@ export class ContentComponent implements OnInit {
 
   ngOnInit() {
 
-    $('#sidebarCollapse').on('click', function () {
-      $('#sidebar').toggleClass('active');
-      console.log("Test");
-  });
 
-  };
+  }
 
 }

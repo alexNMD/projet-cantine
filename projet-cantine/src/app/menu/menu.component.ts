@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { CompteModalComponent } from '../compte-modal/compte-modal.component'
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-menu',
@@ -7,9 +10,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit() {
+  $('#sidebar').on('mouseenter', function () {
+      $('#sidebar').toggleClass('active');
+  });
+  
+  $('#sidebar').on('mouseleave', function () {
+      $('#sidebar').toggleClass('active');
+  });
+  
+  $('#sidebarCollapse').on('click', function () {
+      $('#sidebar').toggleClass('active');
+  });
+  }
+
+
+  openFormModalCompte() {
+    console.log("it works");
+    const modalRef = this.modalService.open(CompteModalComponent);
+    
+    modalRef.result.then((result) => {
+      console.log(result);
+    }).catch((error) => {
+      console.log(error);
+    });
   }
 
 }

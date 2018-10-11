@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -11,6 +12,8 @@ import { LoginComponent } from './login/login.component';
 import { GestionCommandesComponent } from './gestion-commandes/gestion-commandes.component';
 import { HistoriqueIndivComponent } from './historique-indiv/historique-indiv.component';
 
+import { CompteModalComponent } from './compte-modal/compte-modal.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,13 +23,16 @@ import { HistoriqueIndivComponent } from './historique-indiv/historique-indiv.co
     CompteComponent,
     LoginComponent,
     GestionCommandesComponent,
-    HistoriqueIndivComponent
+    HistoriqueIndivComponent,
+    CompteModalComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    NgbModule.forRoot(),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [CompteModalComponent]
 })
 export class AppModule { }
