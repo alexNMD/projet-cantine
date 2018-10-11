@@ -19,7 +19,7 @@ var Rule = (function (_super) {
         return _super !== null && _super.apply(this, arguments) || this;
     }
     Rule.prototype.apply = function (sourceFile) {
-        return this.applyWithWalker(new EnforceComponentSelectorValidatorWalker(sourceFile, this));
+        return this.applyWithWalker(new EnforceComponentSelectorValidatorWalker(sourceFile, this.getOptions()));
     };
     Rule.metadata = {
         ruleName: 'enforce-component-selector',
@@ -30,27 +30,20 @@ var Rule = (function (_super) {
         optionsDescription: 'Not configurable.',
         typescriptOnly: true
     };
-    Rule.SELECTOR_FAILURE = 'The selector of the component "%s" is mandatory.';
+    Rule.SELECTOR_FAILURE = 'The selector of the component "%s" is mandatory';
     return Rule;
 }(Lint.Rules.AbstractRule));
 exports.Rule = Rule;
 var EnforceComponentSelectorValidatorWalker = (function (_super) {
     __extends(EnforceComponentSelectorValidatorWalker, _super);
-    function EnforceComponentSelectorValidatorWalker(sourceFile, rule) {
-        var _this = _super.call(this, sourceFile, rule.getOptions()) || this;
-        _this.rule = rule;
-        return _this;
+    function EnforceComponentSelectorValidatorWalker() {
+        return _super !== null && _super.apply(this, arguments) || this;
     }
     EnforceComponentSelectorValidatorWalker.prototype.visitNgComponent = function (metadata) {
         if (!metadata.selector) {
-            var failureConfig = [metadata.controller.name.text];
-            failureConfig.unshift(Rule.SELECTOR_FAILURE);
-            this.generateFailure(metadata.decorator.getStart(), metadata.decorator.getWidth(), failureConfig);
+            this.addFailureAtNode(metadata.decorator, sprintf_js_1.sprintf(Rule.SELECTOR_FAILURE, metadata.controller.name.text));
         }
         _super.prototype.visitNgComponent.call(this, metadata);
-    };
-    EnforceComponentSelectorValidatorWalker.prototype.generateFailure = function (start, width, failureConfig) {
-        this.addFailure(this.createFailure(start, width, sprintf_js_1.sprintf.apply(this, failureConfig)));
     };
     return EnforceComponentSelectorValidatorWalker;
 }(ngWalker_1.NgWalker));

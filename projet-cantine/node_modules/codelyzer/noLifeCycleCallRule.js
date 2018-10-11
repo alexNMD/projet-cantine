@@ -10,8 +10,8 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 Object.defineProperty(exports, "__esModule", { value: true });
-var sprintf_js_1 = require("sprintf-js");
 var Lint = require("tslint");
+var ts = require("typescript");
 var ngWalker_1 = require("./angular/ngWalker");
 var Rule = (function (_super) {
     __extends(Rule, _super);
@@ -22,15 +22,15 @@ var Rule = (function (_super) {
         return this.applyWithWalker(new ExpressionCallMetadataWalker(sourceFile, this.getOptions()));
     };
     Rule.metadata = {
-        ruleName: 'no-life-cycle-call',
-        type: 'maintainability',
-        description: 'Disallows explicit calls to lifecycle hooks.',
-        rationale: 'Explicit calls to lifecycle hooks could be confusing. Invoke lifecycle hooks is the responsability of Angular.',
+        description: 'Disallows explicit calls to life cycle hooks.',
         options: null,
         optionsDescription: 'Not configurable.',
-        typescriptOnly: true,
+        rationale: 'Explicit calls to life cycle hooks could be confusing. Invoke life cycle hooks is the responsability of Angular.',
+        ruleName: 'no-life-cycle-call',
+        type: 'maintainability',
+        typescriptOnly: true
     };
-    Rule.FAILURE_STRING = 'Avoid explicitly calls to lifecycle hooks in class "%s"';
+    Rule.FAILURE_STRING = 'Avoid explicit calls to life cycle hooks.';
     return Rule;
 }(Lint.Rules.AbstractRule));
 exports.Rule = Rule;
@@ -54,16 +54,13 @@ var ExpressionCallMetadataWalker = (function (_super) {
         _super.prototype.visitCallExpression.call(this, node);
     };
     ExpressionCallMetadataWalker.prototype.validateCallExpression = function (node) {
-        var name = node.expression.name;
-        if (!name || !exports.lifecycleHooksMethods.has(name.text)) {
-            return;
+        var name = ts.isPropertyAccessExpression(node.expression) ? node.expression.name : undefined;
+        var expression = ts.isPropertyAccessExpression(node.expression) ? node.expression.expression : undefined;
+        var isSuperCall = expression && expression.kind === ts.SyntaxKind.SuperKeyword;
+        var isLifecycleCall = name && ts.isIdentifier(name) && exports.lifecycleHooksMethods.has(name.text);
+        if (isLifecycleCall && !isSuperCall) {
+            this.addFailureAtNode(node, Rule.FAILURE_STRING);
         }
-        var currentNode = node;
-        while (currentNode.parent.parent) {
-            currentNode = currentNode.parent;
-        }
-        var failureConfig = [Rule.FAILURE_STRING, currentNode.name.text];
-        this.addFailureAtNode(node, sprintf_js_1.sprintf.apply(this, failureConfig));
     };
     return ExpressionCallMetadataWalker;
 }(ngWalker_1.NgWalker));

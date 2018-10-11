@@ -13,6 +13,7 @@ import { PlatComponent } from './plat/plat.component';
 
 import { CompteModalComponent } from './compte-modal/compte-modal.component';
 import { PanierModalComponent } from './panier-modal/panier-modal.component';
+import { PlatModalComponent } from './plat-modal/plat-modal.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PanierModalComponent } from './panier-modal/panier-modal.component';
     CompteModalComponent,
     CalendrierComponent,
     PlatComponent,
-    PanierModalComponent
+    PanierModalComponent,
+    PlatModalComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,6 @@ import { PanierModalComponent } from './panier-modal/panier-modal.component';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [CompteModalComponent, PanierModalComponent]
+  entryComponents: [CompteModalComponent, PanierModalComponent, PlatModalComponent]
 })
 export class AppModule { }

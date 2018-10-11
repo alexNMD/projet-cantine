@@ -1,4 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {PlatModalComponent} from '../plat-modal/plat-modal.component';
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-plat',
@@ -7,10 +9,19 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class PlatComponent implements OnInit {
 
-  @Input() dishName : string;
-  constructor() { }
+  @Input() dishName: string;
+  constructor(private modalService: NgbModal) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
+    openFormModalPlat() {
+        const modalRef = this.modalService.open(PlatModalComponent);
+
+        modalRef.result.then((result) => {
+            console.log(result);
+        }).catch((error) => {
+            console.log(error);
+        });
+
+    }
 }
