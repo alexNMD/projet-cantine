@@ -9,7 +9,7 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 export class CompteModalComponent implements OnInit {
 
   user: string = "Julien";
-
+  
   constructor(public activeModal: NgbActiveModal) { }
 
   ngOnInit() {
