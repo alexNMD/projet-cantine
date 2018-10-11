@@ -16,7 +16,7 @@ import { PlatComponent } from './plat/plat.component';
         MonPremierComponent,
         AppareilComponent,
         CalendrierComponent,
-        PlatComponent
+        PlatComponent,
     ],
     imports: [
         BrowserModule,
