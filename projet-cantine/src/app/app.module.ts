@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -13,6 +14,8 @@ import { HistoriqueIndivComponent } from './historique-indiv/historique-indiv.co
 import { CalendrierComponent } from './calendrier/calendrier.component';
 import { PlatComponent } from './plat/plat.component';
 
+import { CompteModalComponent } from './compte-modal/compte-modal.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,14 +26,17 @@ import { PlatComponent } from './plat/plat.component';
     LoginComponent,
     GestionCommandesComponent,
     HistoriqueIndivComponent,
+    CompteModalComponent
     CalendrierComponent,
     PlatComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    NgbModule.forRoot(),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [CompteModalComponent]
 })
 export class AppModule { }
