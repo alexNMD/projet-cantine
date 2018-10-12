@@ -15,6 +15,7 @@ import { CompteModalComponent } from './compte-modal/compte-modal.component';
 import { PanierModalComponent } from './panier-modal/panier-modal.component';
 import { RechargeModalComponent } from './recharge-modal/recharge-modal.component';
 import { HistoriqueModalComponent } from './historique-modal/historique-modal.component';
+import { PlatModalComponent } from './plat-modal/plat-modal.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { HistoriqueModalComponent } from './historique-modal/historique-modal.co
     PlatComponent,
     PanierModalComponent,
     RechargeModalComponent,
-    HistoriqueModalComponent
+    HistoriqueModalComponent,
+    PlatModalComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +38,6 @@ import { HistoriqueModalComponent } from './historique-modal/historique-modal.co
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [CompteModalComponent, PanierModalComponent, RechargeModalComponent, HistoriqueModalComponent]
+  entryComponents: [CompteModalComponent, PanierModalComponent, RechargeModalComponent, HistoriqueModalComponent, PlatModalComponent]
 })
 export class AppModule { }

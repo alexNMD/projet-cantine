@@ -35,3 +35,6 @@ html,body {
 .modal-header {
     display:block!important;
 }
+.li-title {
+    background-color: #e3e3e3;
+}
