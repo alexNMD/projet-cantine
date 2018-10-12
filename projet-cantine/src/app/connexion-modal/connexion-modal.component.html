@@ -1,0 +1,34 @@
+<div class="modal-wrapper">
+  <div class="modal-header">
+    <button type="button" class="closeModal btn btn-warning" aria-label="Close" (click)="activeModal.dismiss('Cross click')"><i
+            class="fas fa-times"></i>
+    </button>
+    <div class="profil">
+      <h4 class="modal-title">Connexion</h4>
+    </div>
+  </div>
+  <div class="modal-body">
+
+
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">E-mail</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Votre e-mail">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Mot de passe</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Votre mot de passe">
+        <small id="emailHelp" class="text-left form-text text-muted">Attention à ne jamais communiquer votre mot de passe !</small>
+        <p class="text-right"><a href="" style="color: black; font-size: 13px;">Mot de passe oublié ?</a></p>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Rester connecté</label>
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-primary">S'enregistrer</button>
+    <button class="btn btn-success" (click)="activeModal.dismiss('Close clicked')">Valider</button>
+  </div>
+</div>
