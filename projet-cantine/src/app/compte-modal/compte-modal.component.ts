@@ -12,6 +12,7 @@ export class CompteModalComponent implements OnInit {
   promo: string ="MCDNT-5";
   email: string = "julien.feger@gmail.com";
   regime: string = "Pas de fromage";
+  cagnotte: number = 150;
   
   constructor(public activeModal: NgbActiveModal) { }
 

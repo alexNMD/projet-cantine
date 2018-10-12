@@ -35,7 +35,7 @@ import { PlatModalComponent } from './plat-modal/plat-modal.component';
     PanierModalComponent,
     RechargeModalComponent,
     HistoriqueModalComponent,
-    GestionComponent
+    GestionComponent,
     PlatModalComponent
   ],
   imports: [
