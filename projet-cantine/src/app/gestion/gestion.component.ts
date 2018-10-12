@@ -8,7 +8,7 @@ import { Commande } from '../commande';
 })
 export class GestionComponent implements OnInit {
   commandes = [
-    new Commande(1,'Julien','11/10/2018', 7 ,['Sandwich poulet','prout']),
+    new Commande(1,'Julien','11/10/2018', 7 ,['Sandwich poulet']),
     new Commande(2,'Alan','11/10/2018',7 ,['Sandwich boeuf']),
     new Commande(3,'Dominique','11/10/2018',7 ,['Sandwich poulet']),
     new Commande(4,'Jean-Baptiste','12/10/2018',9 ,['Salade']),
