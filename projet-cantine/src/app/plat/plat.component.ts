@@ -24,4 +24,8 @@ export class PlatComponent implements OnInit {
         });
 
     }
+
+    addFoodItem() {
+        //Déclencher alerte (staticAlertClosed = false)
+    }
 }
