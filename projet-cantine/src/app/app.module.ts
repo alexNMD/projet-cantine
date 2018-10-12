@@ -14,6 +14,7 @@ import { PlatComponent } from './plat/plat.component';
 import { CompteModalComponent } from './compte-modal/compte-modal.component';
 import { PanierModalComponent } from './panier-modal/panier-modal.component';
 import { PlatModalComponent } from './plat-modal/plat-modal.component';
+import { ConnexionModalComponent } from './connexion-modal/connexion-modal.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PlatModalComponent } from './plat-modal/plat-modal.component';
     CalendrierComponent,
     PlatComponent,
     PanierModalComponent,
-    PlatModalComponent
+    PlatModalComponent,
+    ConnexionModalComponent
   ],
   imports: [
     BrowserModule,
