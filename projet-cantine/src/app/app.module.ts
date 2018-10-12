@@ -2,6 +2,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+
+// Import routing
+import { ROUTES } from './routes/app.routes';
+import { RouterModule} from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -15,6 +20,7 @@ import { CompteModalComponent } from './compte-modal/compte-modal.component';
 import { PanierModalComponent } from './panier-modal/panier-modal.component';
 import { RechargeModalComponent } from './recharge-modal/recharge-modal.component';
 import { HistoriqueModalComponent } from './historique-modal/historique-modal.component';
+import { GestionComponent } from './gestion/gestion.component';
 
 @NgModule({
   declarations: [
@@ -27,12 +33,14 @@ import { HistoriqueModalComponent } from './historique-modal/historique-modal.co
     PlatComponent,
     PanierModalComponent,
     RechargeModalComponent,
-    HistoriqueModalComponent
+    HistoriqueModalComponent,
+    GestionComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     NgbModule.forRoot(),
+    RouterModule.forRoot(ROUTES, {onSameUrlNavigation: 'reload'})
   ],
   providers: [],
   bootstrap: [AppComponent],
