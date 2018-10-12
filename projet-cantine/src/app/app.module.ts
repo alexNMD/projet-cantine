@@ -16,6 +16,7 @@ import { PanierModalComponent } from './panier-modal/panier-modal.component';
 import { RechargeModalComponent } from './recharge-modal/recharge-modal.component';
 import { HistoriqueModalComponent } from './historique-modal/historique-modal.component';
 import { PlatModalComponent } from './plat-modal/plat-modal.component';
+import { ConnexionModalComponent } from './connexion-modal/connexion-modal.component';
 
 @NgModule({
   declarations: [
@@ -29,15 +30,17 @@ import { PlatModalComponent } from './plat-modal/plat-modal.component';
     PanierModalComponent,
     RechargeModalComponent,
     HistoriqueModalComponent,
-    PlatModalComponent
+    PlatModalComponent,
+    ConnexionModalComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     NgbModule.forRoot(),
+
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [CompteModalComponent, PanierModalComponent, RechargeModalComponent, HistoriqueModalComponent, PlatModalComponent]
+  entryComponents: [CompteModalComponent, PanierModalComponent, RechargeModalComponent, HistoriqueModalComponent, PlatModalComponent, ConnexionModalComponent]
 })
 export class AppModule { }
