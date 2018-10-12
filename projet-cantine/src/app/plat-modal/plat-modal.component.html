@@ -1,0 +1,36 @@
+<div class="modal-wrapper">
+  <div class="modal-header">
+    <button type="button" class="closeModal btn btn-warning" aria-label="Close" (click)="activeModal.dismiss('Cross click')"><i
+            class="fas fa-times"></i>
+    </button>
+    <h4 class="modal-title"><h2>Plat</h2></h4>
+  </div>
+  <div class="modal-body d-flex justify-content-between">
+    <div class="mr-3 card" style="width: 18rem;">
+      <img class="card-img-top" src="../../assets/images/plat.jpg" alt="Card image cap">
+      <div class="card">
+        <div class="card-header li-title">
+          Descriptif du plat
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Ingrédient 1</li>
+          <li class="list-group-item">Ingrédient 2</li>
+          <li class="list-group-item">Ingrédient 3</li>
+        </ul>
+      </div>
+    </div>
+    <div style="width: 18rem;">
+      <ul class="list-group">
+        <li class="list-group-item li-title">Informations pratiques</li>
+        <li class="list-group-item"><strong>Prix :</strong> 5€</li>
+        <li class="list-group-item"><strong>Type de plat :</strong> Entrée</li>
+        <li class="list-group-item"><strong>Température :</strong> Chaud</li>
+      </ul>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-success">
+      Ajouter au panier
+    </button>
+  </div>
+</div>
