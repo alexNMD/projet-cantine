@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { CompteModalComponent } from '../compte-modal/compte-modal.component'
 import { PanierModalComponent } from '../panier-modal/panier-modal.component'
+import { RechargeModalComponent } from '../recharge-modal/recharge-modal.component'
+import { HistoriqueModalComponent } from '../historique-modal/historique-modal.component'
 
 import * as $ from 'jquery';
 
@@ -25,7 +27,7 @@ export class MenuComponent implements OnInit {
   }
 
 
-  openFormModalCompte(id) {
+  openFormModalCompte() {
     const modalRef = this.modalService.open(CompteModalComponent);
 
     modalRef.result.then((result) => {
@@ -45,4 +47,26 @@ export class MenuComponent implements OnInit {
       console.log(error);
     });
   }
+
+  openFormModalRecharge() {
+    const modalRef = this.modalService.open(RechargeModalComponent);
+
+    modalRef.result.then((result) => {
+      console.log(result);
+    }).catch((error) => {
+      console.log(error);
+    });
   }
+
+  openFormModalHistorique() {
+    const modalRef = this.modalService.open(HistoriqueModalComponent);
+
+    modalRef.result.then((result) => {
+      console.log(result);
+    }).catch((error) => {
+      console.log(error);
+    });
+  }
+
+
+}

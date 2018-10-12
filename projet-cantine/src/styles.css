@@ -22,6 +22,10 @@ html,body {
     height: 100%;
   }
 
+.modal-content {
+    top: 20vh;
+}
+
 .modal-wrapper {
     text-align: center;
 }
@@ -30,4 +34,7 @@ html,body {
 }
 .modal-header {
     display:block!important;
+}
+.li-title {
+    background-color: #e3e3e3;
 }

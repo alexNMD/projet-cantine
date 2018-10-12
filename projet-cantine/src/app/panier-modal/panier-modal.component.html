@@ -6,7 +6,6 @@
     </button>
     <div class="profil">
       <h4 class="modal-title">Panier {{user}} du {{date}}</h4>
-      <img class="trombi-img" src="../../assets/images/plat.jpg" alt="">
     </div>
   </div>
 
@@ -15,33 +14,27 @@
 
     <table class="table-hover">
       <tr>
-        <td><b>Plat</b></td>
+        <th>Plat</th>
+        <th>Photo</th>
+        <th>Prix</th>
+        <th>Supprimer</th>
+      </tr>
+      <tr>
         <td>{{plat}}</td>
-        <td><i class="fas fa-trash-alt"></i></td>
-      </tr>
-      <tr>
-        <td><b>Promo</b></td>
-        <td>{{promo}}</td>
-        <td><i class="fas fa-trash-alt"></i></td>
-      </tr>
-      <tr>
-        <td><b>Email</b></td>
-        <td>{{email}}</td>
-        <td><i class="fas fa-trash-alt"></i></td>
-      </tr>
-      <tr>
-        <td><b>Régime alimentaire</b></td>
-        <td>{{regime}}</td>
+        <td><img class="miniature" src="../../assets/images/plat.jpg" alt=""></td>
+        <td>{{prix}}</td>
         <td><i class="fas fa-trash-alt"></i></td>
       </tr>
 
     </table>
 
+    <p class="totalcmd">Total de la commande : {{totalcommande}} </p>
+
   </div>
 
 
   <div class="modal-footer">
-    <button (click)="activeModal.dismiss('Close clicked')">
+    <button class="btn btn-warning btn-lg" (click)="activeModal.dismiss('Close clicked')">
       Enregistrer et quitter
     </button>
   </div>

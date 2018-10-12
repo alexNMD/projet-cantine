@@ -9,6 +9,9 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 export class CompteModalComponent implements OnInit {
 
   user: string = "Julien";
+  promo: string ="MCDNT-5";
+  email: string = "julien.feger@gmail.com";
+  regime: string = "Pas de fromage";
   
   constructor(public activeModal: NgbActiveModal) { }
 
