@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { FormsModule } from '@angular/forms';
 
 // Import routing
 import { ROUTES } from './routes/app.routes';
@@ -48,6 +47,13 @@ import { ConnexionModalComponent } from './connexion-modal/connexion-modal.compo
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [CompteModalComponent, PanierModalComponent, RechargeModalComponent, HistoriqueModalComponent, PlatModalComponent, ConnexionModalComponent]
+  entryComponents: [
+      CompteModalComponent,
+      PanierModalComponent,
+      RechargeModalComponent,
+      HistoriqueModalComponent,
+      PlatModalComponent,
+      ConnexionModalComponent
+  ]
 })
 export class AppModule { }
