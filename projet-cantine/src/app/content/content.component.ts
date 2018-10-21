@@ -9,9 +9,8 @@ import {debounceTime} from 'rxjs/operators';
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
-
+  date;
   constructor() { }
-  
   private _success = new Subject<string>();
   staticAlertClosed = true;
 
@@ -20,6 +19,14 @@ export class ContentComponent implements OnInit {
     this._success.pipe(
       debounceTime(5000)
     ).subscribe(() => this.staticAlertClosed = true);
+
+    this.date = new Date();
+    if (this.date.getHours() < 10 && this.date.getMinutes() < 30) {
+        $('#luciolle').addClass('text-success');
+      } else {
+        $('#luciolle').addClass('text-danger');
+      }
+    }
   }
 
 }

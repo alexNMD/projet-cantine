@@ -7,6 +7,7 @@ import { HistoriqueModalComponent } from '../historique-modal/historique-modal.c
 import {ConnexionModalComponent} from '../connexion-modal/connexion-modal.component';
 
 import * as $ from 'jquery';
+import {InfosModalComponent} from '../infos-modal/infos-modal.component';
 
 @Component({
   selector: 'app-menu',
@@ -78,6 +79,14 @@ export class MenuComponent implements OnInit {
       console.log(error);
     });
   }
+    openFormModalInfos() {
+        const modalRef = this.modalService.open(InfosModalComponent);
 
+        modalRef.result.then((result) => {
+            console.log(result);
+        }).catch((error) => {
+            console.log(error);
+        });
+    }
 
 }
