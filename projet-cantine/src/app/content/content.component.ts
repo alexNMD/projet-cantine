@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 import {Subject} from 'rxjs';
 import {debounceTime} from 'rxjs/operators';
+import { InfosModalComponent } from '../infos-modal/infos-modal.component';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-content',
@@ -10,7 +12,7 @@ import {debounceTime} from 'rxjs/operators';
 })
 export class ContentComponent implements OnInit {
   date;
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
   private _success = new Subject<string>();
   staticAlertClosed = true;
 
@@ -27,6 +29,16 @@ export class ContentComponent implements OnInit {
         $('#luciolle').addClass('text-danger');
       }
     }
+
+
+    openFormModalInfos() {
+        const modalRef = this.modalService.open(InfosModalComponent);
+
+        modalRef.result.then((result) => {
+            console.log(result);
+        }).catch((error) => {
+            console.log(error);
+        });
+    }
   }
 
-}
