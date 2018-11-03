@@ -1,11 +1,8 @@
-<!--<ul class="list-group">
-    <li class="text-center list-group-item li-title"><strong>{{ dayName }}</strong></li>
-    <app-plat dishName="Burger"></app-plat>
-    <app-plat dishName="Pate"></app-plat>
-    <app-plat dishName="Tarte"></app-plat>
-    <app-plat dishName="Salade"></app-plat>
-    <app-plat dishName="Tomate"></app-plat>
-    <app-plat dishName="Pain au chocolat"></app-plat>
-</ul>-->
-
-
+<div *ngFor="let day of days">
+    <ul class="list-group">
+        <li class="text-center list-group-item li-title">
+            {{ day }}
+        </li>
+        <app-plat></app-plat>
+    </ul>
+</div>
