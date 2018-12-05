@@ -1,6 +1,10 @@
-import {Component, Input, OnInit} from '@angular/core';
-import {PlatModalComponent} from '../plat-modal/plat-modal.component';
-import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import { Component, Input, OnInit } from '@angular/core';
+import { PlatModalComponent } from '../plat-modal/plat-modal.component';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { PlatServicesService } from '../services/plat-services.service';
+import { Plat } from '../plat';
+import { AddPlatModalComponent } from '../add-plat-modal/add-plat-modal.component';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-plat',
@@ -10,9 +14,14 @@ import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 export class PlatComponent implements OnInit {
 
   @Input() dishName: string;
-  constructor(private modalService: NgbModal) { }
+  plats: Plat[];
+  constructor(private modalService: NgbModal, private http: HttpClient, private PlatService: PlatServicesService) { }
+/*
   plats = ['Burger', 'Pate', 'Tarte', 'Salade', 'Tomate', 'Pain au chocolat', 'Patate', 'Oignon'];
+*/
+
   ngOnInit() {
+      this.getPlat();
   }
     openFormModalPlat() {
         const modalRef = this.modalService.open(PlatModalComponent);
@@ -25,6 +34,13 @@ export class PlatComponent implements OnInit {
 
     }
 
+    addPlat() {
+      this.modalService.open(AddPlatModalComponent);
+    }
+    getPlat():void {
+      this.PlatService.getPlat()
+          .subscribe(data => this.plats = Object.values(data));
+    }
     addFoodItem() {
         //Déclencher alerte (staticAlertClosed = false)
     }
