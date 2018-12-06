@@ -23,9 +23,8 @@ export class PlatComponent implements OnInit {
   ngOnInit() {
       this.getPlat();
   }
-    openFormModalPlat() {
+    openFormModalPlat(plat) {
         const modalRef = this.modalService.open(PlatModalComponent);
-
         modalRef.result.then((result) => {
             console.log(result);
         }).catch((error) => {

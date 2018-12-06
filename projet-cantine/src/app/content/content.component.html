@@ -2,12 +2,12 @@
 	<div id="message">
 			<ngb-alert *ngIf="!staticAlertClosed" type="warning" (close)="staticAlertClosed = true" class="border border-warning rounded-bottom">Le plat a été ajouté à votre panier</ngb-alert>
 	</div>
+	<h1 class="text-center">Planning de la semaine</h1>
 	<div class="text-right mt-2 mr-2">
 		<div><a href="#" style="color: #9d7d58;" (click)="openFormModalInfos()"><i class="fas fa-info-circle fa-2x"></i></a></div>
 		<h2><i id="luciolle" class="fas fa-circle fa-xs"></i>  {{ date | date:'HH:mm' }}</h2>
 		<h3>{{ date | date:'dd MMMM yyyy' }}</h3>
 	</div>
-	<h1 class="text-center">Planning de la semaine</h1>
 	<div class="container mt-5">
 		<app-calendrier class="row d-flex justify-content-between"></app-calendrier>
 	</div>

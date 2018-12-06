@@ -29,7 +29,8 @@ export class PlatServicesService {
   }
   // Ajout de plat depuis un formulaire
   addPlat(obj) {
-      let plat = new Plat(obj.name, obj.price, obj.type_dish, obj.temp, obj.ingredients, obj.image, obj.date);
+      let ingredients = obj.ingredients.split(';');
+      let plat = new Plat(obj.name, obj.price, obj.type_dish, obj.temp, ingredients, obj.image, obj.date);
       this.http
           .post('https://food-for-fun-bdd.firebaseio.com/food-for-fun-bdd.json', plat, httpOptions)
           .subscribe(
