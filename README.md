@@ -30,7 +30,7 @@ Créditer / débiter un compte utilisateur. Pour rappel la cagnotte ne pourra se
 - Le système doit être ergonomique et être utilisable sans manuel d'utilisation et sans formation préalable. Privilégier les aides contextuelles intégrées à l'application au besoin (pop in, roll over…).
 
 
-##INSTALLATION DU PROJET (DEV)
+## 3.3.    INSTALLATION DU PROJET (DEV)
 
 -Installer Angular
 -Créer un nouveau projet
