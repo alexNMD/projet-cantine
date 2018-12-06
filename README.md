@@ -1,4 +1,4 @@
-# projet-cantine
+﻿# projet-cantine
 
 ## 3.1.    PRESENTATION DE L'ENTREPRISE
 La société Stone Education est un organisme de formation professionnel diplômant reconnu par l'état qui accueille de nombreux stagiaires.
@@ -28,3 +28,12 @@ Annuler une commande. Dans ce cas, la cagnotte sera re-crédité et un email ser
 Créditer / débiter un compte utilisateur. Pour rappel la cagnotte ne pourra se remplir que si l’utilisateur passe voir physiquement la cantinière pour y placer de l’argent. Elle sera débitée automatiquement lors de la commande. En cas de problème de commande, la cantinière doit pouvoir re-créditer la cagnotte.
 - La cantinière doit avoir accès à un récapitulatif synthétique des commandes prises pour le jour même. En cliquant sur un jour donné, elle doit avoir le détail des plats commandés et l’identité des stagiaires ayant passé la commande.
 - Le système doit être ergonomique et être utilisable sans manuel d'utilisation et sans formation préalable. Privilégier les aides contextuelles intégrées à l'application au besoin (pop in, roll over…).
+
+
+#INSTALLATION DU PROJET (DEV)
+
+-Installer Angular
+-Créer un nouveau projet
+-Copier le dossier node_modules dans le dossier de projet-cantine
+-Installer jquery (npm install jquery)
+-Installer bootstrap (npm install bootstrap)

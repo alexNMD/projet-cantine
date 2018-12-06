@@ -10,6 +10,9 @@ import { RouterModule} from '@angular/router';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { ContentComponent } from './content/content.component';
+import { MatSidenavModule, MatButtonModule, MatIconModule } from '@angular/material';
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatListModule } from '@angular/material';
 
 import { LoginComponent } from './login/login.component';
 import { CalendrierComponent } from './calendrier/calendrier.component';
@@ -48,6 +51,11 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    MatSidenavModule,
+    MatButtonModule,
+    MatIconModule,
+    FlexLayoutModule,
+    MatListModule,
     NgbModule.forRoot(),
     RouterModule.forRoot(ROUTES, {onSameUrlNavigation: 'reload'}),
     FormsModule
