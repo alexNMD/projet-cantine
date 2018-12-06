@@ -1,32 +1,47 @@
 import { Component, OnInit } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Router } from '@angular/router';
 import { CompteModalComponent } from '../compte-modal/compte-modal.component';
 import { PanierModalComponent } from '../panier-modal/panier-modal.component';
 import { RechargeModalComponent } from '../recharge-modal/recharge-modal.component';
 import { HistoriqueModalComponent } from '../historique-modal/historique-modal.component';
 import {ConnexionModalComponent} from '../connexion-modal/connexion-modal.component';
-
-import * as $ from 'jquery';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { trigger, state, style, animate, transition} from '@angular/animations';
 
 @Component({
   selector: 'app-menu',
   templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.css']
+  styleUrls: ['./menu.component.css'],
+  animations: [
+    trigger('openClose', [
+      state('open', style({
+        width: '15em'
+      })),
+      state('closed', style({
+        width: '4em'
+      })),
+      transition('open <=> closed', [
+        animate('0.25s')
+      ]),
+    ]),
+  ]
 })
 export class MenuComponent implements OnInit {
+  sidenavWidth = 'closed';
 
-  constructor(private modalService: NgbModal) { }
+  constructor(private router: Router, private modalService: NgbModal) { }
 
   ngOnInit() {
-    $('#sidebar').on('mouseenter', function () {
-      $('#sidebar').toggleClass('active');
-    });
-
-    $('#sidebar').on('mouseleave', function () {
-      $('#sidebar').toggleClass('active');
-    });
   }
 
+  increase() {
+    this.sidenavWidth = 'open';
+    console.log("increase sidenav width");
+  }
+  decrease() {
+    this.sidenavWidth = 'closed';
+    console.log("decrease sidenav width");
+  }
 
   openFormModalCompte() {
     const modalRef = this.modalService.open(CompteModalComponent);
@@ -38,16 +53,16 @@ export class MenuComponent implements OnInit {
     });
 
   }
-    openFormModalConnexion() {
-        const modalRef = this.modalService.open(ConnexionModalComponent);
+  openFormModalConnexion() {
+    const modalRef = this.modalService.open(ConnexionModalComponent);
 
-        modalRef.result.then((result) => {
-            console.log(result);
-        }).catch((error) => {
-            console.log(error);
-        });
+    modalRef.result.then((result) => {
+      console.log(result);
+    }).catch((error) => {
+      console.log(error);
+    });
 
-    }
+  }
 
   openFormModalPanier() {
     const modalRef = this.modalService.open(PanierModalComponent);
@@ -78,6 +93,4 @@ export class MenuComponent implements OnInit {
       console.log(error);
     });
   }
-
-
 }

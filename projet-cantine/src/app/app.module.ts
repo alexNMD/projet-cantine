@@ -10,6 +10,9 @@ import { RouterModule} from '@angular/router';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
 import { ContentComponent } from './content/content.component';
+import { MatSidenavModule, MatButtonModule, MatIconModule } from '@angular/material';
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { MatListModule } from '@angular/material';
 
 import { LoginComponent } from './login/login.component';
 import { CalendrierComponent } from './calendrier/calendrier.component';
@@ -42,8 +45,13 @@ import { ConnexionModalComponent } from './connexion-modal/connexion-modal.compo
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    MatSidenavModule,
+    MatButtonModule,
+    MatIconModule,
+    FlexLayoutModule,
+    MatListModule,
     NgbModule.forRoot(),
-    RouterModule.forRoot(ROUTES, {onSameUrlNavigation: 'reload'})
+    RouterModule.forRoot(ROUTES, { onSameUrlNavigation: 'reload' })
   ],
   providers: [],
   bootstrap: [AppComponent],
