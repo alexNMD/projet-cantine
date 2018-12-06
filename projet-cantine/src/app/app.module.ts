@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
+import {LOCALE_ID, NgModule} from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { HttpClientModule } from '@angular/common/http';
 // Import routing
 import { ROUTES } from './routes/app.routes';
 import { RouterModule} from '@angular/router';
@@ -22,6 +22,9 @@ import { HistoriqueModalComponent } from './historique-modal/historique-modal.co
 import { GestionComponent } from './gestion/gestion.component';
 import { PlatModalComponent } from './plat-modal/plat-modal.component';
 import { ConnexionModalComponent } from './connexion-modal/connexion-modal.component';
+import { InfosModalComponent } from './infos-modal/infos-modal.component';
+import { AddPlatModalComponent } from './add-plat-modal/add-plat-modal.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -37,13 +40,17 @@ import { ConnexionModalComponent } from './connexion-modal/connexion-modal.compo
     HistoriqueModalComponent,
     ConnexionModalComponent,
     GestionComponent,
-    PlatModalComponent
+    PlatModalComponent,
+    InfosModalComponent,
+    AddPlatModalComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     BrowserAnimationsModule,
     NgbModule.forRoot(),
-    RouterModule.forRoot(ROUTES, {onSameUrlNavigation: 'reload'})
+    RouterModule.forRoot(ROUTES, {onSameUrlNavigation: 'reload'}),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -53,7 +60,9 @@ import { ConnexionModalComponent } from './connexion-modal/connexion-modal.compo
       RechargeModalComponent,
       HistoriqueModalComponent,
       PlatModalComponent,
-      ConnexionModalComponent
+      ConnexionModalComponent,
+      InfosModalComponent,
+      AddPlatModalComponent
   ]
 })
 export class AppModule { }

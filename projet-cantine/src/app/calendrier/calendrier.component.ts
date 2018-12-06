@@ -7,10 +7,10 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class CalendrierComponent implements OnInit {
 
-  @Input() dayName : string;
+  @Input() dayName: string;
   constructor() { }
-
+  days = ['Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi'];
+  // Jours non ouvrés
   ngOnInit() {
   }
-
 }
