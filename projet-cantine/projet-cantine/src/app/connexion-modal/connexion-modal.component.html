@@ -1,0 +1,73 @@
+<div class="modal-wrapper">
+  <div class="modal-header">
+    <button type="button" class="closeModal btn btn-warning" aria-label="Close" (click)="activeModal.dismiss('Cross click')"><i
+            class="fas fa-times"></i>
+    </button>
+    <div class="profil">
+      <h4 class="modal-title">Connexion / Inscription</h4>
+    </div>
+  </div>
+  <div class="modal-body">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="connexion-tab" data-toggle="tab" href="#connexionTab" role="tab" aria-controls="home" aria-selected="true">Connexion</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="inscription-tab" data-toggle="tab" href="#inscriptionTab" role="tab" aria-controls="profile" aria-selected="false">Inscription</a>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="myTabContent">
+
+      <div class="tab-pane fade show active" id="connexionTab" role="tabpanel" aria-labelledby="connexion-tab">
+        <form>
+          <div class="form-group">
+            <label for="connexionEmail">E-mail</label>
+            <input type="email" class="form-control" id="connexionEmail" aria-describedby="emailHelp" placeholder="Votre e-mail">
+          </div>
+          <div class="form-group">
+            <label for="connexionPassword">Mot de passe</label>
+            <input type="password" class="form-control" id="connexionPassword" placeholder="Votre mot de passe">
+            <small id="connexionEmailHelp" class="text-left form-text text-muted">Attention à ne jamais communiquer votre mot de passe !</small>
+            <p class="text-right"><a href="" style="color: black; font-size: 13px;">Mot de passe oublié ?</a></p>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="stayConnected">
+            <label class="form-check-label" for="stayConnected">Rester connecté</label>
+          </div>
+        </form>
+        <div class="modal-footer">
+          <button class="btn btn-success" (click)="activeModal.dismiss('Close clicked')">Se connecter</button>
+        </div>
+      </div>
+
+      <div class="tab-pane fade" id="inscriptionTab" role="tabpanel" aria-labelledby="inscription-tab">
+        <form>
+          <div class="form-group">
+            <label for="nom">Nom</label>
+            <input type="email" class="form-control" id="nom" placeholder="Votre nom">
+            <label for="prenom">Prénom</label>
+            <input type="text" class="form-control" id="prenom" placeholder="Votre prénom">
+          </div>
+          <div class="form-group">
+            <label for="inscriptionPassword">Mot de passe</label>
+            <input type="password" class="form-control" id="" placeholder="Votre mot de passe">
+            <input type="password" class="form-control" id="" placeholder="Confirmer votre mot de passe">
+          </div>
+          <div class="form-group">
+            <label for="regimeAlimentaire">Régime alimentaire</label>
+            <textarea class="form-control" name="regimeAlimentaire" id="regimeAlimentaire" cols="5" rows="2.5"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="inscriptionPassword">Mot de passe</label>
+            <input type="password" class="form-control" id="inscriptionPassword" placeholder="Votre mot de passe">
+            <input type="password" class="form-control" id="confirmationPassword" placeholder="Confirmer votre mot de passe">
+          </div>
+        </form>
+        <div class="modal-footer">
+          <button class="btn btn-success" (click)="activeModal.dismiss('Close clicked')">S'enregistrer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

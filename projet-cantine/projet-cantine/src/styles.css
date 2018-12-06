@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+html,body {
+    height: 100vh;
+}
+.bodyColor {
+    background-color: #F1E4B5
+}
+.menu {
+    background-color: #C59D6E;
+}
+.main-content {
+    background-color: #F1E4B5;
+}
+.closeModal {
+    background-color: #C59D6E;
+    position: relative;
+    top: -33px;
+}
+.wrapper {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+  }
+
+.modal-content {
+    top: 20vh;
+}
+
+.modal-wrapper {
+    text-align: center;
+}
+.modal-footer {
+    display: block!important;
+}
+.modal-header {
+    display:block!important;
+}
+.li-title {
+    background-color: #e3e3e3;
+}

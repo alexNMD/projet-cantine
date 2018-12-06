@@ -1,0 +1,14 @@
+.main {
+    text-align: center;
+}
+.table-hover {
+    margin: auto!important;
+    width: 80vw;
+}
+.table-hover td {
+    margin: 10px;
+}
+
+button {
+    margin: 2rem;
+}
