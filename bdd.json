@@ -1,0 +1,38 @@
+[
+  {
+    "name": "burger",
+    "ingredients": [
+      "viande",
+      "salade",
+      "tomate"
+    ],
+    "price": 5,
+    "image": "image_url",
+    "type_dish": "plat",
+    "temp": "chaud"
+  },
+  {
+    "name": "Salade chèvre",
+    "ingredients": [
+      "viande",
+      "salade",
+      "tomate"
+    ],
+    "price": 5,
+    "image": "image_url",
+    "type_dish": "plat",
+    "temp": "chaud"
+  },
+  {
+    "name": "Pate",
+    "ingredients": [
+      "viande",
+      "salade",
+      "tomate"
+    ],
+    "price": 5,
+    "image": "image_url",
+    "type_dish": "plat",
+    "temp": "chaud"
+  }
+]

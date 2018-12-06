@@ -4,9 +4,11 @@ import { CompteModalComponent } from '../compte-modal/compte-modal.component';
 import { PanierModalComponent } from '../panier-modal/panier-modal.component';
 import { RechargeModalComponent } from '../recharge-modal/recharge-modal.component';
 import { HistoriqueModalComponent } from '../historique-modal/historique-modal.component';
-import {ConnexionModalComponent} from '../connexion-modal/connexion-modal.component';
+import { ConnexionModalComponent} from '../connexion-modal/connexion-modal.component';
+import { InfosModalComponent } from '../infos-modal/infos-modal.component';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { trigger, state, style, animate, transition} from '@angular/animations';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-menu',
