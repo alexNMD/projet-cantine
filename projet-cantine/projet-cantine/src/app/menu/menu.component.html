@@ -1,0 +1,136 @@
+<!-- Sidebar -->
+<mat-sidenav-container fullscreen>
+  <mat-sidenav #sidenav mode="side" class="sidenav" [@openClose]="sidenavWidth" opened="true" (mouseenter)="increase()" (mouseleave)="decrease()">
+
+    <div class="sidebar-header text-center">
+      <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
+        <h3>Food For Fun</h3>
+      </div>
+      <div *ngIf="sidenavWidth == 'closed'" class="sidenav-item">
+        <strong>FFF</strong>
+      </div>
+    </div>
+    <div class="sidebar-main-menu">
+      <mat-nav-list>
+
+        <mat-list-item (click)="openFormModalCompte()">
+          <mat-icon>account_circle</mat-icon>
+          <div fxFlex="10"></div>
+          <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
+            <h5>[Username]</h5>
+          </div>
+        </mat-list-item>
+
+        <mat-list-item (click)="openFormModalConnexion()">
+          <mat-icon>account_circle</mat-icon>
+          <div fxFlex="10"></div>
+          <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
+            <h5>[Connexion]</h5>
+          </div>
+        </mat-list-item>
+
+        <mat-list-item (click)="openFormModalPanier()">
+          <mat-icon>shopping_cart</mat-icon>
+          <div fxFlex="10"></div>
+          <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
+            <h5>Panier</h5>
+          </div>
+        </mat-list-item>
+
+        <mat-list-item (click)="openFormModalHistorique()">
+          <mat-icon>history</mat-icon>
+          <div fxFlex="10"></div>
+          <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
+            <h5>Historique</h5>
+          </div>
+        </mat-list-item>
+
+      </mat-nav-list>
+    </div>
+
+    <div class="gestion">
+      <div class="sidebar-header text-center">
+        <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
+          <h4>Gestion</h4>
+        </div>
+       </div>
+
+      <mat-nav-list>
+
+        <mat-list-item (click)="openFormModalRecharge()">
+          <mat-icon>credit_card</mat-icon>
+          <div fxFlex="10"></div>
+          <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
+            <h5>Recharger</h5>
+          </div>
+        </mat-list-item>
+
+        <mat-list-item routerLink="/gestion">
+          <mat-icon>settings</mat-icon>
+          <div fxFlex="10"></div>
+          <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
+            <h5>Gérer les commandes</h5>
+          </div>
+        </mat-list-item>
+
+        <mat-list-item >
+          <mat-icon>my_library_books</mat-icon>
+          <div fxFlex="10"></div>
+          <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
+            <h5>Logs</h5>
+          </div>
+        </mat-list-item>
+
+      </mat-nav-list>
+    </div>
+  </mat-sidenav>
+
+  <div class="sidenav-content">
+    <div class="container">
+      <div class="row">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+
+
+</mat-sidenav-container>
+
+<!--<nav id="sidebar">
+    <div class="sidebar-header text-center">
+        <h3>Food For Fun</h3>
+        <strong>FFF</strong>
+    </div>
+
+    <ul class="list-unstyled components text-center">
+        <li>
+            <a href="#" (click)="openFormModalCompte()"><i class="fas fa-user"></i><span> [Username]</span></a>
+        </li>
+        <li>
+            <a href="#" (click)="openFormModalConnexion()"><i class="fas fa-user"></i><span> [Connexion]</span></a>
+        </li>
+        <li>
+            <a href="#" (click)="openFormModalPanier()"><i class="fas fa-shopping-cart"></i><span> Panier</span></a>
+        </li>
+        <li>
+            <a href="#" (click)="openFormModalHistorique()"><i class="fas fa-book"></i><span> Historique</span></a>
+        </li>
+    </ul>
+    <div class="gestion">
+        <h4>Gestion</h4>
+        <ul class="liste-unstyled components text-center">
+            <li>
+                <a href="#" (click)="openFormModalRecharge()"><i class="fas fa-credit-card"></i><span> Recharger</span></a>
+            </li>
+            <li>
+                <a routerLink="/gestion"><i class="fas fa-cogs"></i><span> Gérer les commandes</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-clipboard-list"></i><span> Logs</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<button type="button" id="sidebarCollapse" class="btn btn-info d-block d-sm-none">
+    <i class="fas fa-align-left"></i>
+</button>-->

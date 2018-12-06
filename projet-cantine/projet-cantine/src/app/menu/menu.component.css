@@ -1,0 +1,42 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+
+.sidenav-content {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-main-menu {
+  padding-bottom: 10px;
+}
+
+.sidenav {
+  text-align: left;
+  background: #C59D6E;
+}
+
+.sidenav-item {
+  color: white;
+  font-size: 20px;
+}
+
+mat-icon {
+  color: white;
+}
+
+.sidebar-header {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #9d7d58;
+}
+
+mat-list-item {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+mat-list-item:hover {
+  background: #9d7d58;
+}
