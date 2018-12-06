@@ -11,7 +11,7 @@ import { Plat } from '../plat';
 export class AddPlatModalComponent implements OnInit {
 
   constructor(public activeModal: NgbActiveModal, public PlatService: PlatServicesService) { }
-
+  
   ngOnInit() {
   }
 
@@ -20,5 +20,6 @@ export class AddPlatModalComponent implements OnInit {
     }
     addPlat(newPlat) {
       this.PlatService.addPlat(newPlat.value);
+      this.closeModal();
     }
 }

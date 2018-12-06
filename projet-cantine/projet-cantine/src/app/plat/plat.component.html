@@ -1,8 +1,8 @@
 <li *ngFor="let plat of plats" class="list-group-item d-flex justify-content-between">
     <span>{{ plat.name }}</span>
     <div>
-        <button type="button" class="btn btn-primary btn-sm mr-1" (click)="openFormModalPlat(plat)"><i class="fas fa-info"></i></button>
-        <button type="button" class="btn btn-success btn-sm" (click)="addFoodItem()"><i class="fas fa-plus"></i></button>
+        <button type="button" class="btn btn-secondary btn-sm mr-1" (click)="openFormModalPlat(plat)"><i class="fas fa-info"></i></button>
+        <button type="button" class="btn btn-warning btn-sm" (click)="addFoodItem()"><i class="fas fa-plus"></i></button>
     </div>
 </li>
 <button class="btn btn-primary col-md-12" (click)="addPlat()">Ajouter un plat</button>

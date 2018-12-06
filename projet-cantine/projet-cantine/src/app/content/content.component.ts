@@ -5,18 +5,25 @@ import {debounceTime} from 'rxjs/operators';
 import { InfosModalComponent } from '../infos-modal/infos-modal.component';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
+import { PlatServicesService } from "../services/plat-services.service";
+
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.css']
 })
 export class ContentComponent implements OnInit {
-  date;
-  constructor(private modalService: NgbModal) { }
-  private _success = new Subject<string>();
-  staticAlertClosed = true;
 
+  date;
+
+  staticAlertClosed = true;
+  private _success = new Subject<string>();
+
+  constructor(private modalService: NgbModal, private platService : PlatServicesService) {
+  }
+  
   ngOnInit() {
+
     this._success.subscribe((message) => this.staticAlertClosed = false);
     this._success.pipe(
       debounceTime(5000)
@@ -29,8 +36,6 @@ export class ContentComponent implements OnInit {
         $('#luciolle').addClass('text-danger');
       }
     }
-
-
     openFormModalInfos() {
         const modalRef = this.modalService.open(InfosModalComponent);
 
