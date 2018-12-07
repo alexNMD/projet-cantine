@@ -8,7 +8,7 @@ import * as $ from 'jquery';
 export class AppComponent implements OnInit {
   title = 'projet-cantine';
 
-  ngOnInit(){
+  ngOnInit() {
     $('#sidebarCollapse').on('click', function () {
       $('#sidebar').toggleClass('active');
   });
