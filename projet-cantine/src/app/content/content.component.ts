@@ -1,10 +1,12 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import * as $ from 'jquery';
-import { Subject} from 'rxjs';
-import { debounceTime } from 'rxjs/operators';
+import {Subject} from 'rxjs';
+import {debounceTime} from 'rxjs/operators';
 import { InfosModalComponent } from '../infos-modal/infos-modal.component';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { ClockService } from '../services/clock.service';
+
+import { PlatServicesService } from "../services/plat-services.service";
 
 @Component({
   selector: 'app-content',
@@ -16,10 +18,12 @@ export class ContentComponent implements OnInit, OnDestroy {
   private _clockSubscription;
   private _success = new Subject<string>();
   staticAlertClosed = true;
+  private _success = new Subject<string>();
 
-  constructor(private clockService: ClockService, private modalService: NgbModal) { }
+  constructor(private clockService: ClockService, private modalService: NgbModal, private platService : PlatServicesService) { }
 
   ngOnInit() {
+
     this._success.subscribe((message) => this.staticAlertClosed = false);
     this._success.pipe(
       debounceTime(5000)
@@ -44,7 +48,7 @@ export class ContentComponent implements OnInit, OnDestroy {
         console.log(result);
     }).catch((error) => {
         console.log(error);
-    });
+    })
   }
 
   ngOnDestroy(): void {
