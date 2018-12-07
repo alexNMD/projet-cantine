@@ -33,7 +33,11 @@ export class PlatComponent implements OnInit {
     }
 
     addPlat() {
-      this.modalService.open(AddPlatModalComponent);
+      const modalRef = this.modalService.open(AddPlatModalComponent);
+      modalRef.componentInstance.change.subscribe(plat => this.savePlat(plat));
+    }
+    savePlat(plat) {
+        this.plats.push(plat);
     }
     updatePlatList() {
       this.plats.push(this.plat);

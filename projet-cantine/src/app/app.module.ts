@@ -58,7 +58,7 @@ import { FormsModule } from '@angular/forms';
     MatListModule,
     NgbModule.forRoot(),
     RouterModule.forRoot(ROUTES, {onSameUrlNavigation: 'reload'}),
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
