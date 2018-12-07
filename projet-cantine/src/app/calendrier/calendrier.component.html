@@ -1,7 +1,8 @@
-<div *ngFor="let day of days">
+<div class="dayWrapper" *ngFor="let day of days; let i of index">
+    <button (click)="displayPlats(day)">Afficher plats</button>
     <ul class="list-group">
         <li class="text-center list-group-item li-title">
-            {{ day }}
+            {{ day | date:'dd MMMM yyyy'  }}
         </li>
         <app-plat></app-plat>
     </ul>
