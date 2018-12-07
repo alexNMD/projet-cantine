@@ -14,10 +14,10 @@ import { ClockService } from '../services/clock.service';
 export class ContentComponent implements OnInit, OnDestroy {
   date;
   private _clockSubscription;
-
-  constructor(private clockService: ClockService, private modalService: NgbModal) { }
   private _success = new Subject<string>();
   staticAlertClosed = true;
+
+  constructor(private clockService: ClockService, private modalService: NgbModal) { }
 
   ngOnInit() {
     this._success.subscribe((message) => this.staticAlertClosed = false);
