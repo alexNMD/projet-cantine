@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
-import {Subject} from 'rxjs';
-import {debounceTime} from 'rxjs/operators';
+import { Subject} from 'rxjs';
+import { debounceTime } from 'rxjs/operators';
 import { InfosModalComponent } from '../infos-modal/infos-modal.component';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
