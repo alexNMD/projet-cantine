@@ -3,28 +3,28 @@
     <button type="button" class="closeModal btn btn-warning" aria-label="Close" (click)="activeModal.dismiss('Cross click')"><i
             class="fas fa-times"></i>
     </button>
-    <h4 class="modal-title"><h2>nom du plat</h2></h4>
+    <h4 class="modal-title"><h2>{{ name }}</h2></h4>
   </div>
   <div class="modal-body d-flex justify-content-between">
     <div class="mr-3 card" style="width: 18rem;">
-      <img class="card-img-top" src="../../assets/images/plat.jpg" alt="Card image cap">
+      <img class="card-img-top" src="{{ image }}" alt="Card image cap">
       <div class="card">
         <div class="card-header li-title">
           Descriptif du plat
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Ingrédient 1</li>
-          <li class="list-group-item">Ingrédient 2</li>
-          <li class="list-group-item">Ingrédient 3</li>
+          <li class="list-group-item" *ngFor="let ingredient of ingredients[0]">
+            {{ ingredient }}
+          </li>
         </ul>
       </div>
     </div>
     <div style="width: 18rem;">
       <ul class="list-group">
         <li class="list-group-item li-title">Informations pratiques</li>
-        <li class="list-group-item"><strong>Prix :</strong> 5€</li>
-        <li class="list-group-item"><strong>Type de plat :</strong> Entrée</li>
-        <li class="list-group-item"><strong>Température :</strong> Chaud</li>
+        <li class="list-group-item"><strong>Prix :</strong> {{ price }} €</li>
+        <li class="list-group-item"><strong>Type de plat :</strong> {{ type_dish }} </li>
+        <li class="list-group-item"><strong>Température :</strong> {{ temp }} </li>
       </ul>
     </div>
   </div>

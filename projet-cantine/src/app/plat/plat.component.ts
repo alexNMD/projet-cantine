@@ -14,29 +14,31 @@ import { HttpClient } from '@angular/common/http';
 export class PlatComponent implements OnInit {
 
   @Input() dishName: string;
+  @Input() plat: Plat;
   plats: Plat[];
   constructor(private modalService: NgbModal, private http: HttpClient, private PlatService: PlatServicesService) { }
-/*
-  plats = ['Burger', 'Pate', 'Tarte', 'Salade', 'Tomate', 'Pain au chocolat', 'Patate', 'Oignon'];
-*/
 
   ngOnInit() {
       this.getPlat();
   }
     openFormModalPlat(plat) {
         const modalRef = this.modalService.open(PlatModalComponent);
-        modalRef.result.then((result) => {
-            console.log(result);
-        }).catch((error) => {
-            console.log(error);
-        });
-
+        modalRef.componentInstance.name = plat.name;
+        modalRef.componentInstance.price = plat.price;
+        modalRef.componentInstance.temp = plat.temp;
+        modalRef.componentInstance.type_dish = plat.type_dish;
+        modalRef.componentInstance.image = plat.image;
+        modalRef.componentInstance.ingredients = plat.ingredients;
+        modalRef.componentInstance.date = plat.date;
     }
 
     addPlat() {
       this.modalService.open(AddPlatModalComponent);
     }
-    getPlat():void {
+    updatePlatList() {
+      this.plats.push(this.plat);
+    }
+    getPlat(): void {
       this.PlatService.getPlat()
           .subscribe(data => this.plats = Object.values(data));
     }
