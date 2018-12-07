@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import { CompteModalComponent } from '../compte-modal/compte-modal.component'
-import { PanierModalComponent } from '../panier-modal/panier-modal.component'
-import { RechargeModalComponent } from '../recharge-modal/recharge-modal.component'
-import { HistoriqueModalComponent } from '../historique-modal/historique-modal.component'
+import { CompteModalComponent } from '../compte-modal/compte-modal.component';
+import { PanierModalComponent } from '../panier-modal/panier-modal.component';
+import { RechargeModalComponent } from '../recharge-modal/recharge-modal.component';
+import { HistoriqueModalComponent } from '../historique-modal/historique-modal.component';
+import {ConnexionModalComponent} from '../connexion-modal/connexion-modal.component';
 
 import * as $ from 'jquery';
+import { InfosModalComponent } from '../infos-modal/infos-modal.component';
 
 @Component({
   selector: 'app-menu',
@@ -37,6 +39,16 @@ export class MenuComponent implements OnInit {
     });
 
   }
+    openFormModalConnexion() {
+        const modalRef = this.modalService.open(ConnexionModalComponent);
+
+        modalRef.result.then((result) => {
+            console.log(result);
+        }).catch((error) => {
+            console.log(error);
+        });
+
+    }
 
   openFormModalPanier() {
     const modalRef = this.modalService.open(PanierModalComponent);
@@ -67,6 +79,5 @@ export class MenuComponent implements OnInit {
       console.log(error);
     });
   }
-
 
 }

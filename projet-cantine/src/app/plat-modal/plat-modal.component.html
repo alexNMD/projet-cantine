@@ -3,7 +3,7 @@
     <button type="button" class="closeModal btn btn-warning" aria-label="Close" (click)="activeModal.dismiss('Cross click')"><i
             class="fas fa-times"></i>
     </button>
-    <h4 class="modal-title"><h2>Plat</h2></h4>
+    <h4 class="modal-title"><h2>nom du plat</h2></h4>
   </div>
   <div class="modal-body d-flex justify-content-between">
     <div class="mr-3 card" style="width: 18rem;">
@@ -29,7 +29,7 @@
     </div>
   </div>
   <div class="modal-footer">
-    <button class="btn btn-success">
+    <button class="btn btn-success" (click)="openAddMealInfo()">
       Ajouter au panier
     </button>
   </div>

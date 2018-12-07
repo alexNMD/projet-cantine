@@ -8,8 +8,5 @@ export declare class Rule extends Lint.Rules.AbstractRule {
     apply(sourceFile: ts.SourceFile): Lint.RuleFailure[];
 }
 export declare class EnforceComponentSelectorValidatorWalker extends NgWalker {
-    private rule;
-    constructor(sourceFile: ts.SourceFile, rule: Rule);
-    visitNgComponent(metadata: ComponentMetadata): void;
-    private generateFailure(start, width, failureConfig);
+    protected visitNgComponent(metadata: ComponentMetadata): void;
 }
