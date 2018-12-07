@@ -16,6 +16,7 @@ export class AddPlatModalComponent implements OnInit {
   @Input() invalidForm: boolean;
   ngOnInit() {
   }
+
     closeModal() {
         this.activeModal.close('Modal closed');
     }
