@@ -18,7 +18,6 @@ export class ContentComponent implements OnInit, OnDestroy {
   private _clockSubscription;
   private _success = new Subject<string>();
   staticAlertClosed = true;
-  private _success = new Subject<string>();
 
   constructor(private clockService: ClockService, private modalService: NgbModal, private platService : PlatServicesService) { }
 
