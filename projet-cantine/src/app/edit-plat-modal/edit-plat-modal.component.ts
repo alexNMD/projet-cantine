@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { PlatServicesService } from '../services/plat-services.service';
 
@@ -24,14 +24,28 @@ export class EditPlatModalComponent implements OnInit {
     this.PlatService.getPlatByKey(key)
         .subscribe(data => {
         this.plat = data;
+        this.plat.ingredients = this.plat.ingredients.toString().replace(/,/g, ';');
     });
   }
   editPlat(updatedPlat) {
-    console.log(updatedPlat.form.value);
-    this.PlatService.editPlat(updatedPlat.form.value, this.key)
-        .subscribe(data => {
-            this.edit.emit(updatedPlat);
-            this.activeModal.close();
-        });
+      if (
+          updatedPlat.value.name === '' ||
+          updatedPlat.value.price === '' ||
+          updatedPlat.value.type_dish === '' ||
+          updatedPlat.value.temp === '' ||
+          updatedPlat.value.ingredients === '' ||
+          updatedPlat.value.image === '' ||
+          updatedPlat.value.image === '' ||
+          updatedPlat.value.date === ''
+      ) {
+          alert('Tous les champs doivent être remplis !');
+      } else {
+            updatedPlat.value.ingredients = updatedPlat.value.ingredients.split(';');
+            this.PlatService.editPlat(updatedPlat.form.value, this.key)
+                .subscribe(data => {
+                    this.edit.emit(updatedPlat.form.value);
+                    this.activeModal.close();
+                });
+        }
   }
 }
