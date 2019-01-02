@@ -1,0 +1,55 @@
+<script src="edit-plat-modal.component.ts"></script>
+<div class="modal-wrapper">
+  <div class="modal-header">
+    <button type="button" class="closeModal btn btn-warning" aria-label="Close" (click)="activeModal.dismiss('Cross click')"><i
+            class="fas fa-times"></i>
+    </button>
+    <h4 class="modal-title"><h2>Modifier un plat</h2></h4>
+  </div>
+  <div class="modal-body">
+    <form (ngSubmit)="editPlat(updatedPlat)" #updatedPlat="ngForm">
+      <div class="row">
+        <div class="form-group col-md-9">
+          <label for="name">Nom</label>
+          <input type="text" class="form-control" id="name" name="name" [ngModel]="plat?.name">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="price">Prix</label>
+          <input type="number" class="form-control" id="price" name="price" [ngModel]="plat?.price">
+        </div>
+      </div>
+      <div class="row">
+        <div class="form-group col-md-6">
+          <label for="type_dish">Type de plat</label>
+          <select class="form-control" name="type_dish" id="type_dish" [ngModel]="plat?.type_dish">
+            <option value="Entrée">Entrée</option>
+            <option value="Plat">Plat</option>
+            <option value="Dessert">Dessert</option>
+            <option value="Boisson">Boisson</option>
+          </select>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="temp">Température</label>
+          <select class="form-control" name="temp" id="temp" [ngModel]="plat?.temp">
+            <option value="Chaud">Chaud</option>
+            <option value="Froid">Froid</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="ingredient">Liste ingrédients</label>
+        <textarea type="text" class="form-control" id="ingredient" name="ingredients" [ngModel]="plat?.ingredients"></textarea>
+        <small id="emailHelp" class="form-text text-muted">Veuillez bien séparer les ingrédients avec des ";" pour que le système les prennent en compte.</small>
+      </div>
+      <div class="form-group">
+        <label for="image">Image</label>
+        <input type="email" class="form-control" id="image" name="image" placeholder="url de l'image..." [ngModel]="plat?.image">
+      </div>
+      <div class="form-group">
+        <label for="date">Date de disponibilité</label>
+        <input type="date" class="form-control" id="date" name="date" [ngModel]="plat?.date">
+      </div>
+      <button type="submit" class="btn btn-primary">Enregistrer</button>
+    </form>
+  </div>
+</div>

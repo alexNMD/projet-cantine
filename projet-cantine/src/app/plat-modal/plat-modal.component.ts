@@ -1,7 +1,6 @@
-import {Component, Input, OnInit} from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
-import { MatTabsModule } from '@angular/material/tabs';
-import { Plat } from '../plat';
+import { PlatServicesService } from '../services/plat-services.service';
 
 @Component({
   selector: 'app-plat-modal',
@@ -9,19 +8,20 @@ import { Plat } from '../plat';
   styleUrls: ['./plat-modal.component.css']
 })
 export class PlatModalComponent implements OnInit {
-  @Input() name: string;
-  @Input() price: number;
-  @Input() temp: string;
-  @Input() type_dish: string;
-  @Input() image: string;
-  @Input() ingredients: Array<string>;
-  @Input() date: Date;
-  constructor(public activeModal: NgbActiveModal) { }
+  @Input() key: string;
+  plat: Object;
+  constructor(public activeModal: NgbActiveModal, private PlatService: PlatServicesService) { }
 
   ngOnInit() {
-    console.log(this.ingredients);
+    this.getBeerByKey(this.key);
+  }
+  getBeerByKey(key) {
+        this.PlatService.getPlatByKey(key)
+            .subscribe(data => {
+                this.plat = data;
+            });
   }
   closeModal() {
         this.activeModal.close('Modal closed');
-    }
+  }
 }
