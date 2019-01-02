@@ -12,7 +12,7 @@ export class AddPlatModalComponent implements OnInit {
 
 /*  submitted = false;*/
   constructor(public activeModal: NgbActiveModal, public PlatService: PlatServicesService) { }
-  @Output() change = new EventEmitter();
+  @Output() add = new EventEmitter();
   @Input() invalidForm: boolean;
   ngOnInit() {
   }
@@ -32,9 +32,15 @@ export class AddPlatModalComponent implements OnInit {
       ) {
         alert('Tous les champs doivent être remplis !');
       } else {
-          this.PlatService.addPlat(newPlat.value);
-          this.change.emit(newPlat.value);
-          this.activeModal.close();
+          console.log(newPlat);
+          newPlat.value.ingredients = newPlat.value.ingredients.split(';');
+          this.PlatService.addPlat(newPlat.value)
+              .subscribe(data => {
+                  let plat: Object = {key: Object.values(data)[0], values: newPlat.value};
+                  console.log(plat);
+                  this.add.emit(plat);
+                  this.activeModal.close();
+              });
       }
     }
 }

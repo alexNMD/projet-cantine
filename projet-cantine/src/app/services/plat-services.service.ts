@@ -27,20 +27,41 @@ export class PlatServicesService {
               catchError(this.handleError('getPlat', []))
           );
   }
-  // Ajout de plat depuis un formulaire
-  addPlat(obj) {
-      let ingredients = obj.ingredients.split(';');
-      let plat = new Plat(obj.name, obj.price, obj.type_dish, obj.temp, ingredients, obj.image, obj.date);
-      this.http
-          .post('https://food-for-fun-bdd.firebaseio.com/food-for-fun-bdd.json', plat, httpOptions)
-          .subscribe(
-              () => {
-                  console.log('ça marche');
-              });
+  // Récupération d'un plat depuis une 'key'
+  getPlatByKey(key: string): Observable<Plat[]> {
+        console.log('https://food-for-fun-bdd.firebaseio.com/food-for-fun-bdd/' + key + '.json');
+        return this.http.get<Plat[]>('https://food-for-fun-bdd.firebaseio.com/food-for-fun-bdd/' + key + '.json')
+            .pipe(
+                tap(data => JSON.stringify(data)),
+                catchError(this.handleError('getPlatByKey', []))
+            );
   }
-  // Modification d'un plat depuis un formulaire
-  updatePlat() {}
+  // Ajout de plat depuis un formulaire
+  addPlat(plat: Plat): Observable<Plat> {
+      const url = 'https://food-for-fun-bdd.firebaseio.com/food-for-fun-bdd.json';
+      return this.http.post<Plat>(url, plat, {responseType: 'json'}).pipe(
+          tap((product: Plat) => console.log('plat ajouté')),
+          catchError(this.handleError<Plat>('addPlat')));
+  }
 
+  // Modification d'un plat depuis un formulaire
+  editPlat(plat: Plat, key: string): Observable<Plat> {
+      const url = `https://food-for-fun-bdd.firebaseio.com/food-for-fun-bdd/` + key + '.json';
+      console.log(url);
+      return this.http.put<Plat>(url, plat, {responseType: 'json'}).pipe(
+          tap(data => JSON.stringify(data)),
+          catchError(this.handleError<Plat>('editPlat')));
+  }
+
+  // Suppresion d'un plat depuis une 'key'
+  deletePlat(key: string): Observable<Plat> {
+        const url = 'https://food-for-fun-bdd.firebaseio.com/food-for-fun-bdd/' + key + '.json';
+        return this.http.delete<Plat>(url)
+            .pipe(
+                tap(data => data),
+                catchError(this.handleError<Plat>('deletePlat'))
+            );
+  }
     /**
      * Handle Http operation that failed.
      * Let the app continue.
