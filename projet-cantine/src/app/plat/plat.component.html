@@ -1,8 +1,21 @@
-<li *ngFor="let plat of plats" class="list-group-item d-flex justify-content-between">
-    <span>{{ plat.name }}</span>
-    <div>
-        <button type="button" class="btn btn-secondary btn-sm mr-1" (click)="openFormModalPlat(plat)"><i class="fas fa-info"></i></button>
-        <button type="button" class="btn btn-warning btn-sm" (click)="addFoodItem()"><i class="fas fa-plus"></i></button>
+<li *ngFor="let plat of plats" class="list-group-item">
+    <ng-template #popTitle><b>Options</b></ng-template>
+    <ng-template #popContent>
+        <ul class="list-group">
+            <a (click)="editPlat(plat.key)" style="cursor: pointer;"><li class="list-group-item list-group-item-action">Modifier</li></a>
+            <a (click)="deletePlat(plat.key)" style="cursor: pointer;"><li class="list-group-item list-group-item-action">Supprimer</li></a>
+        </ul>
+    </ng-template>
+    <div class="d-flex justify-content-between">
+        <button type="button" class="btn btn-outline-secondary mr-2" placement="bottom"
+                [ngbPopover]="popContent" [popoverTitle]="popTitle">
+            <i class="fas fa-ellipsis-v" style="vertical-align: middle;"></i>
+        </button>
+        <span>{{ plat.values.name }}</span>
+        <div>
+            <button type="button" class="btn btn-secondary btn-sm mr-1" (click)="openFormModalPlat(plat.key)"><i class="fas fa-info"></i></button>
+            <button type="button" class="btn btn-warning btn-sm" (click)="addFoodItem()"><i class="fas fa-plus"></i></button>
+        </div>
     </div>
 </li>
 <button class="btn btn-primary col-md-12" (click)="addPlat()">Ajouter un plat</button>

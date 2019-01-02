@@ -28,6 +28,7 @@ import { ConnexionModalComponent } from './connexion-modal/connexion-modal.compo
 import { InfosModalComponent } from './infos-modal/infos-modal.component';
 import { AddPlatModalComponent } from './add-plat-modal/add-plat-modal.component';
 import { FormsModule } from '@angular/forms';
+import { EditPlatModalComponent } from './edit-plat-modal/edit-plat-modal.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { FormsModule } from '@angular/forms';
     GestionComponent,
     PlatModalComponent,
     InfosModalComponent,
-    AddPlatModalComponent
+    AddPlatModalComponent,
+    EditPlatModalComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +60,7 @@ import { FormsModule } from '@angular/forms';
     MatListModule,
     NgbModule.forRoot(),
     RouterModule.forRoot(ROUTES, {onSameUrlNavigation: 'reload'}),
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -70,7 +72,8 @@ import { FormsModule } from '@angular/forms';
       PlatModalComponent,
       ConnexionModalComponent,
       InfosModalComponent,
-      AddPlatModalComponent
+      AddPlatModalComponent,
+      EditPlatModalComponent
   ]
 })
 export class AppModule { }
