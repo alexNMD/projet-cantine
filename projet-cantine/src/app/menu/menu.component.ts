@@ -9,6 +9,7 @@ import { InfosModalComponent } from '../infos-modal/infos-modal.component';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { trigger, state, style, animate, transition} from '@angular/animations';
 import * as $ from 'jquery';
+import { TemplatePortalDirective } from '@angular/cdk/portal';
 
 @Component({
   selector: 'app-menu',
@@ -94,5 +95,21 @@ export class MenuComponent implements OnInit {
     }).catch((error) => {
       console.log(error);
     });
+  }
+
+  isLoggedIn() {
+    return false;
+  }
+
+  isAdmin() {
+    if(this.isLoggedIn()){
+      return true;
+    }
+  }
+
+  getUsername(){
+    if(this.isLoggedIn()){
+      return "Tapir";
+    }
   }
 }

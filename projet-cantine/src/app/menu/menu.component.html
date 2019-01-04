@@ -12,22 +12,26 @@
     </div>
     <div class="sidebar-main-menu">
       <mat-nav-list>
+        
+        <ng-template [ngIf]="isLoggedIn()" [ngIfElse]="loggedOut">
+          <mat-list-item (click)="openFormModalCompte()">
+            <mat-icon>account_circle</mat-icon>
+            <div fxFlex="10"></div>
+            <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
+              <h5>{{getUsername()}}</h5>
+            </div>
+          </mat-list-item>
+        </ng-template>
 
-        <mat-list-item (click)="openFormModalCompte()">
-          <mat-icon>account_circle</mat-icon>
-          <div fxFlex="10"></div>
-          <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
-            <h5>[Username]</h5>
-          </div>
-        </mat-list-item>
-
-        <mat-list-item (click)="openFormModalConnexion()">
-          <mat-icon>account_circle</mat-icon>
-          <div fxFlex="10"></div>
-          <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
-            <h5>[Connexion]</h5>
-          </div>
-        </mat-list-item>
+        <ng-template #loggedOut>
+          <mat-list-item (click)="openFormModalConnexion()">
+            <mat-icon>account_circle</mat-icon>
+            <div fxFlex="10"></div>
+            <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
+              <h5>Connexion</h5>
+            </div>
+          </mat-list-item>
+        </ng-template>
 
         <mat-list-item (click)="openFormModalPanier()">
           <mat-icon>shopping_cart</mat-icon>
@@ -37,7 +41,7 @@
           </div>
         </mat-list-item>
 
-        <mat-list-item (click)="openFormModalHistorique()">
+        <mat-list-item *ngIf="isLoggedIn()" (click)="openFormModalHistorique()">
           <mat-icon>history</mat-icon>
           <div fxFlex="10"></div>
           <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
@@ -48,41 +52,44 @@
       </mat-nav-list>
     </div>
 
-    <div class="gestion">
-      <div class="sidebar-header text-center">
-        <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
-          <h4>Gestion</h4>
+    <ng-template [ngIf]="isAdmin()">
+      <div class="gestion">
+        <div class="sidebar-header text-center">
+          <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
+            <h4>Gestion</h4>
+          </div>
         </div>
-       </div>
 
-      <mat-nav-list>
+        <mat-nav-list>
 
-        <mat-list-item (click)="openFormModalRecharge()">
-          <mat-icon>credit_card</mat-icon>
-          <div fxFlex="10"></div>
-          <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
-            <h5>Recharger</h5>
-          </div>
-        </mat-list-item>
+          <mat-list-item (click)="openFormModalRecharge()">
+            <mat-icon>credit_card</mat-icon>
+            <div fxFlex="10"></div>
+            <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
+              <h5>Recharger</h5>
+            </div>
+          </mat-list-item>
 
-        <mat-list-item routerLink="/gestion">
-          <mat-icon>settings</mat-icon>
-          <div fxFlex="10"></div>
-          <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
-            <h5>Gérer les commandes</h5>
-          </div>
-        </mat-list-item>
+          <mat-list-item routerLink="/gestion">
+            <mat-icon>settings</mat-icon>
+            <div fxFlex="10"></div>
+            <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
+              <h5>Gérer les commandes</h5>
+            </div>
+          </mat-list-item>
 
-        <mat-list-item >
-          <mat-icon>my_library_books</mat-icon>
-          <div fxFlex="10"></div>
-          <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
-            <h5>Logs</h5>
-          </div>
-        </mat-list-item>
+          <mat-list-item >
+            <mat-icon>my_library_books</mat-icon>
+            <div fxFlex="10"></div>
+            <div *ngIf="sidenavWidth == 'open'" class="sidenav-item">
+              <h5>Logs</h5>
+            </div>
+          </mat-list-item>
 
-      </mat-nav-list>
-    </div>
+        </mat-nav-list>
+      </div>
+    </ng-template>
+    
   </mat-sidenav>
 
   <div class="sidenav-content">
