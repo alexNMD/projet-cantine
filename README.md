@@ -31,8 +31,6 @@ Créditer / débiter un compte utilisateur. Pour rappel la cagnotte ne pourra se
 
 
 ## 3.3.    INSTALLATION DU PROJET (DEV)
--Installer Angular
--Créer un nouveau projet
--Copier le dossier node_modules dans le dossier de projet-cantine
--Installer jquery (npm install jquery)
--Installer bootstrap (npm install bootstrap)
+- Installer Angular
+- Cloner le repo
+- Utiliser "npm install" dans le dossier
