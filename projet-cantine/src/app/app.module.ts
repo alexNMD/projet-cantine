@@ -29,6 +29,13 @@ import { InfosModalComponent } from './infos-modal/infos-modal.component';
 import { AddPlatModalComponent } from './add-plat-modal/add-plat-modal.component';
 import { FormsModule } from '@angular/forms';
 import { EditPlatModalComponent } from './edit-plat-modal/edit-plat-modal.component';
+import { AddMenuModalComponent } from './add-menu-modal/add-menu-modal.component';
+
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { environment } from 'src/environments/environment';
+export const firebaseConfig = environment.firebaseConfig;
 
 @NgModule({
   declarations: [
@@ -47,7 +54,8 @@ import { EditPlatModalComponent } from './edit-plat-modal/edit-plat-modal.compon
     PlatModalComponent,
     InfosModalComponent,
     AddPlatModalComponent,
-    EditPlatModalComponent
+    EditPlatModalComponent,
+    AddMenuModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -61,6 +69,9 @@ import { EditPlatModalComponent } from './edit-plat-modal/edit-plat-modal.compon
     NgbModule.forRoot(),
     RouterModule.forRoot(ROUTES, {onSameUrlNavigation: 'reload'}),
     FormsModule,
+      AngularFireModule.initializeApp(firebaseConfig),
+      AngularFirestoreModule,
+      AngularFireAuthModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
@@ -73,7 +84,6 @@ import { EditPlatModalComponent } from './edit-plat-modal/edit-plat-modal.compon
       ConnexionModalComponent,
       InfosModalComponent,
       AddPlatModalComponent,
-      EditPlatModalComponent
   ]
 })
 export class AppModule { }

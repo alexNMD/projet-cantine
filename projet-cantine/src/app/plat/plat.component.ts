@@ -5,7 +5,7 @@ import { PlatServicesService } from '../services/plat-services.service';
 import { Plat } from '../plat';
 import { AddPlatModalComponent } from '../add-plat-modal/add-plat-modal.component';
 import { HttpClient } from '@angular/common/http';
-import {EditPlatModalComponent} from '../edit-plat-modal/edit-plat-modal.component';
+import { EditPlatModalComponent } from '../edit-plat-modal/edit-plat-modal.component';
 
 @Component({
   selector: 'app-plat',
