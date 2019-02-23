@@ -11,22 +11,24 @@ export class EditPlatModalComponent implements OnInit {
 
   @Input() key: string;
   plat: Object;
+  ingredients: string;
   constructor(private activeModal: NgbActiveModal, private PlatService: PlatServicesService) { }
   @Output() edit = new EventEmitter();
 
   ngOnInit() {
-    this.getPlatByKey(this.key);
+    /*this.getPlatByKey(this.key);*/
   }
   closeModal() {
         this.activeModal.close();
   }
-  getPlatByKey(key) {
+  /*getPlatByKey(key) {
     this.PlatService.getPlatByKey(key)
         .subscribe(data => {
         this.plat = data;
-        this.plat.ingredients = this.plat.ingredients.toString().replace(/,/g, ';');
+        this.ingredients = this.plat.ingredients.toString().replace(/,/g, ';');
+        /!*this.plat.ingredients = this.plat.ingredients.toString().replace(/,/g, ';');*!/
     });
-  }
+  }*/
   editPlat(updatedPlat) {
       if (
           updatedPlat.value.name === '' ||

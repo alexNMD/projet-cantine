@@ -38,11 +38,9 @@ export class MenuComponent implements OnInit {
 
   increase() {
     this.sidenavWidth = 'open';
-    console.log("increase sidenav width");
   }
   decrease() {
     this.sidenavWidth = 'closed';
-    console.log("decrease sidenav width");
   }
 
   openFormModalCompte() {
